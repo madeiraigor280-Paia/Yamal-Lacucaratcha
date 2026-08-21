@@ -1,0 +1,10 @@
+cutscene = true;
+cooldowncutscene = 0
+walking = 0;
+cooldownactionboss = 0
+wl = true;
+wr = false
+cooldownwalking = 0
+shooting = false
+cooldownshooting = 0;
+tired = false;

@@ -1,0 +1,1 @@
+global.vidaplayer = 10;

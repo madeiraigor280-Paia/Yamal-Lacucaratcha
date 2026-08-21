@@ -1,0 +1,43 @@
+{
+  "$GMTileSet":"v1",
+  "%Name":"tl_level1",
+  "autoTileSets":[],
+  "macroPageTiles":{
+    "SerialiseHeight":21,
+    "SerialiseWidth":13,
+    "TileCompressedData":[
+      -84,0,6,218,219,220,218,219,220,-7,0,6,239,240,241,239,240,241,-43,0,9,214,215,216,214,215,216,214,215,
+      216,-4,0,9,235,236,237,235,236,237,235,236,237,-44,0,1,138,-12,0,1,159,-12,0,9,180,215,216,214,215,216,
+      214,215,216,-4,0,9,235,236,237,235,236,237,235,236,237,-4,0,9,256,257,258,256,257,258,256,257,258,
+    ],
+    "TileDataFormat":1,
+  },
+  "name":"tl_level1",
+  "out_columns":17,
+  "out_tilehborder":2,
+  "out_tilevborder":2,
+  "parent":{
+    "name":"Conjuntos de tiles",
+    "path":"folders/Conjuntos de tiles.yy",
+  },
+  "resourceType":"GMTileSet",
+  "resourceVersion":"2.0",
+  "spriteId":{
+    "name":"spr_title01",
+    "path":"sprites/spr_title01/spr_title01.yy",
+  },
+  "spriteNoExport":false,
+  "textureGroupId":{
+    "name":"Default",
+    "path":"texturegroups/Default",
+  },
+  "tileAnimationFrames":[],
+  "tileAnimationSpeed":15.0,
+  "tileHeight":16,
+  "tilehsep":0,
+  "tilevsep":0,
+  "tileWidth":16,
+  "tilexoff":0,
+  "tileyoff":0,
+  "tile_count":294,
+}

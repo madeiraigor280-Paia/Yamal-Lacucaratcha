@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"sq_transicao_in_Events3",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"sq_transicao_in_Events3",
+  "parent":{
+    "name":"Plataforma_Principal_Projeto",
+    "path":"Plataforma_Principal_Projeto.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
