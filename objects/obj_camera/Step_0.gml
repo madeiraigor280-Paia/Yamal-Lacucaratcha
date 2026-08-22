@@ -7,9 +7,9 @@ if (instance_exists(obj_player))
 	}
 	else
 	{
-		if (instance_exists(obj_clone_player))
+		if (instance_exists(obj_clone_jonas))
 		{
-			var _target = obj_clone_player;
+			var _target = obj_clone_jonas;
 		}
 		else
 		{

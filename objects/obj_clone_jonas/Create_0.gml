@@ -2,7 +2,16 @@ velh		= 0;
 velv		= 0;
 vel			= 4;
 grav		= .3;
-vel_jump	= 7;
+vel_jump	= 4;
+
+move_chekpoint = false;
+
+
+if (instance_exists(obj_bola_clone))
+{
+	obj_bola_clone.ja_clonei_na_fase = true	
+}
+
 
 //Variaveis quicadas
 max_quicadas = 5;
@@ -49,8 +58,8 @@ max_dash = 1
 qtd_dash = max_dash;
 
 
-estado = "out";
-sprite_index = spr_player1_out;
+estado = "normal";
+//sprite_index = spr_player1_out;
 image_speed = 0;
 
 //Criando a transição de saida da porta SE eu não estou na tela inicia
@@ -205,10 +214,16 @@ estado_normal = function()
 			
 			if (global.vida <= 0)
 			{
-				estado = "dead";
-				global.morangos = 0
-				
-				//morre_player();
+				//if (instance_exists(obj_player))
+				//{
+					
+					
+				//}
+				//estado = "dead";
+				//global.morangos = 0
+				////Reiniciando para o player se controlar
+				//global.player1 = true;
+				morre_player();
 				
 			}
 			else

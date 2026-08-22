@@ -8,20 +8,14 @@ if (!_no_chao)
 }
 
 
-if (keyboard_check_pressed(ord("R")))
-{
-	if (!global.morreu)
-	{
-		
-		if (instance_exists(obj_clone_jonas))
-		{
-			global.player1 = !global.player1;
-		}
-	}
-}
+//if (keyboard_check_pressed(ord("R")))
+//{
+//	global.player1 = !global.player1	
+//}
 
+if (move_chekpoint)exit;
 
-if (!global.player1)
+if (global.player1)
 {
 	var _no_chao = place_meeting(x, y + 1, obj_chao)
 	if (global.transicao != false) exit;
@@ -124,40 +118,40 @@ switch(estado)
 	
 	break;
 	
-	case "in":
-		mudando_sprite(spr_jonas_in);
+	//case "in":
+	//	mudando_sprite(spr_jonas_in);
 		
 		
-		//Terminou a animação, para a animação
-		var _img_vel = sprite_get_speed(sprite_index) / room_speed;
+	//	//Terminou a animação, para a animação
+	//	var _img_vel = sprite_get_speed(sprite_index) / room_speed;
 		
-		//Indo para o estado normal
-		if (image_index > image_number - _img_vel)
-		{
-			image_speed = 0;
-			image_index = image_number - 1;
-			image_alpha = 0;
+	//	//Indo para o estado normal
+	//	if (image_index > image_number - _img_vel)
+	//	{
+	//		image_speed = 0;
+	//		image_index = image_number - 1;
+	//		image_alpha = 0;
 			
-		}
+	//	}
 		
 	
-	break;
+	//break;
 	
-	case "out":
-		mudando_sprite(spr_jonas_out);
+	//case "out":
+	//	mudando_sprite(spr_jonas_out);
 		
 
 		
-		var _img_vel = sprite_get_speed(sprite_index) / room_speed;
+	//	var _img_vel = sprite_get_speed(sprite_index) / room_speed;
 		
-		//Indo para o estado normal
-		if (image_index > image_number - _img_vel)
-		{
-			estado = "normal";
+	//	//Indo para o estado normal
+	//	if (image_index > image_number - _img_vel)
+	//	{
+	//		estado = "normal";
 			
-		}
+	//	}
 	
-	break;
+	//break;
 	
 	case "dead":
 		mudando_sprite(spr_player_dead);
@@ -168,7 +162,9 @@ switch(estado)
 		if (timer_reinicia <= 0)
 		{
 			global.vida = global.max_vida;
-			morre_player();
+			
+			
+			
 			game_restart();	
 		}
 		
