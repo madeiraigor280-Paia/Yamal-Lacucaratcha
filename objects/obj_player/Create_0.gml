@@ -4,6 +4,8 @@ vel			= 4;
 grav		= .3;
 vel_jump	= 7;
 
+
+
 //Parte que eu fiz do Boss e outros
 qtd_pulos = 0;
 max_pulos = 2

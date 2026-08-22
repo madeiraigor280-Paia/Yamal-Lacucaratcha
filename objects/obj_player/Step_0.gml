@@ -146,4 +146,5 @@ switch(estado)
 	
 }
 
+var _dire = point_direction(x, y, mouse_x, mouse_y)
 

@@ -9,7 +9,17 @@ if estado == "dead" exit;
 		draw_sprite_ext(spr_bola, 0, x + xx, y - 8 + yy, 1, 1, dir, c_white, 1)
 	
 		if mouse_check_button_pressed(mb_left){
-			var inst = instance_create_layer(x - xx, y - 8 + yy, "Projeteis", obj_faca)
+			
+			var _bola_clone = obj_bola_clone
+			
+			if (global.modo)
+			{
+				var inst = instance_create_layer(x - xx, y - 8 + yy, "Projeteis", obj_faca)
+			}
+			else
+			{
+				var inst = instance_create_layer(x - xx, y - 8 + yy, "Projeteis", obj_bola_clone)
+			}
 			inst.melhoria = false;
 			inst.direction = dir;
 			inst.image_angle = dir;
