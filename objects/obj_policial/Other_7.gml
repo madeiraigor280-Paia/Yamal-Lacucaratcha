@@ -1,0 +1,1 @@
+if(sprite_index==s_policial_dead && morrendo) instance_destroy();

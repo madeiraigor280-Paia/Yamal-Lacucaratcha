@@ -14,3 +14,5 @@ muda_sprite = function(_sprite)
 		image_index = 0;
 	}
 }
+
+colisaoporco =false;

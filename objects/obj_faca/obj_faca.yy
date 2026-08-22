@@ -15,8 +15,8 @@
   "name":"obj_faca",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Ricochete",
+    "path":"folders/Objetos/Ricochete.yy",
   },
   "parentObjectId":null,
   "persistent":false,

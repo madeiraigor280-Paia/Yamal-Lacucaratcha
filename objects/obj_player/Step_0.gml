@@ -1,19 +1,58 @@
+//Fazendo ele ter gravidade a todo momento
+var _no_chao = place_meeting(x, y + 1, obj_chao)
+if (global.transicao != false) exit;
+
+if (!_no_chao)
+{
+	velv += grav;
+}
+
+
+if (keyboard_check_pressed(ord("R")))
+{
+	global.player1 = !global.player1	
+}
+
+
+if (!global.player1)
+{
+	var _no_chao = place_meeting(x, y + 1, obj_chao)
+	if (global.transicao != false) exit;
+	velv += grav;
+	
+	velh = 0;
+	
+	
+	sprite_index = spr_player_idle;
+	image_blend = c_gray;
+	exit;	
+	
+}
+else
+{
+	image_blend = c_white
+	
+	
+}
+
+
 //show_debug_message(tempo_cooldown_dash)
 
 var _chao = place_meeting(x, y + 1, obj_chao);
 
 
+	
 
 //Deixando o jogo em tela cheia quando eu apertar o F11
 //Ou tirar de tela cheia
 if (keyboard_check_pressed(vk_f11))
 {
-    //Pegando se a tela ta cheia
-    var _full = window_get_fullscreen();
+	//Pegando se a tela ta cheia
+	var _full = window_get_fullscreen();
     
-    //Deixando a tela cheia se ela não esta cheia
-    //Ou restaurando a tela se ela esta cheia
-    window_set_fullscreen(!_full);
+	//Deixando a tela cheia se ela não esta cheia
+	//Ou restaurando a tela se ela esta cheia
+	window_set_fullscreen(!_full);
 }
 
 
@@ -145,6 +184,8 @@ switch(estado)
 	
 	
 }
+
+
 
 var _dire = point_direction(x, y, mouse_x, mouse_y)
 

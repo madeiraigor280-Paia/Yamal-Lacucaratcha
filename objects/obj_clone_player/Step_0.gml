@@ -96,28 +96,28 @@ if (!_na_parede)
 
 
 //Empurrando blocos
-var _push_list = ds_list_create();
+//var _push_list = ds_list_create();
 
-var _is_block_h = instance_place_list(x + velh, y, obj_caixa, _push_list, false);
+//var _is_block_h = instance_place_list(x + velh, y, obj_caixa, _push_list, false);
 
-if (_is_block_h){
-	if (ds_list_size(_push_list) > 0){
-		for(var i = 0; i < ds_list_size(_push_list); i++){
-			var block = _push_list[|i]; //ds_list_find_value
-			with(block){
-				if (!place_meeting(x + other.velh, y, obj_chao)){
-				x += other.velh;
-				}
+//if (_is_block_h){
+//	if (ds_list_size(_push_list) > 0){
+//		for(var i = 0; i < ds_list_size(_push_list); i++){
+//			var block = _push_list[|i]; //ds_list_find_value
+//			with(block){
+//				if (!place_meeting(x + other.velh, y, obj_chao)){
+//				x += other.velh;
+//				}
 				
-			}
-		}
+//			}
+//		}
 		
-	}
+//	}
 		
-}
+//}
 
-ds_list_destroy(_push_list)
+//ds_list_destroy(_push_list)
 
 
-layer_hspeed("bg_perto", velh / 10)
+//layer_hspeed("bg_perto", velh / 10)
 

@@ -1,0 +1,1 @@
+brilho_efect(0.8,0.8,c_yellow,0.2)

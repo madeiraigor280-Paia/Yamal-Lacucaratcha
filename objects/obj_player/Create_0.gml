@@ -4,7 +4,9 @@ vel			= 4;
 grav		= .3;
 vel_jump	= 7;
 
-
+//Variaveis quicadas
+max_quicadas = 5;
+attack_speed = 2
 
 //Parte que eu fiz do Boss e outros
 qtd_pulos = 0;
@@ -183,7 +185,7 @@ estado_normal = function()
 		
 		//Aplico a gravidade
 		//Aplicando a gravidade
-		velv += grav;
+		//velv += grav;
 		if (velh != 0)
 		{
 			image_xscale = sign(velh);	

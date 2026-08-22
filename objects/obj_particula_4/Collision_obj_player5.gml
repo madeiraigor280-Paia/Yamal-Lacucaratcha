@@ -1,0 +1,1 @@
+if(!ativa) ativa=true;

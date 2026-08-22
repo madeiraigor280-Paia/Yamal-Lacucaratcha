@@ -15,3 +15,6 @@ cooldown = 0;
 ja_clonei_na_fase = false;
 criei_clone = false
 mudei = false
+
+quicadas = 0
+max_quicada = 5

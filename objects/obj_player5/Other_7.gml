@@ -1,0 +1,1 @@
+if(sprite_index == s_player_dead) global.reseta_jogo();

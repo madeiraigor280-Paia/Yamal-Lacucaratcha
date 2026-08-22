@@ -1,0 +1,1 @@
+colisaomorteiro=false;

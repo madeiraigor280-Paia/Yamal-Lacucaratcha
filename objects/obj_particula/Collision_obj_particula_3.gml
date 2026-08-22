@@ -1,0 +1,1 @@
+if(pode_colidir) instance_destroy();

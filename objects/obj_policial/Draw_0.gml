@@ -1,0 +1,1 @@
+desenha_sombra(1,0.8)

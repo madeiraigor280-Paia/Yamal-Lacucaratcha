@@ -1,0 +1,3 @@
+if (!ativa) {
+    ativa = true;
+}

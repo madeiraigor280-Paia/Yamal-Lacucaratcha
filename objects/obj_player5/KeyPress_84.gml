@@ -1,0 +1,1 @@
+global.teclado=!global.teclado

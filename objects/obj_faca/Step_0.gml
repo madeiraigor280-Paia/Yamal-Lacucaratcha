@@ -5,18 +5,23 @@ if melhoria == true{
 }
 else
 {
-	timer_vivo++;
-	
-	
-	if (timer_vivo >= tempo_vivo)
+	if (quicadas >= max_quicada)
 	{
 		instance_destroy()	
 	}
+	
+	//timer_vivo++;
+	
+	
+	//if (timer_vivo >= tempo_vivo)
+	//{
+	//	instance_destroy()	
+	//}
 }
 
 
 
-if (global.modo == false)
+if (global.modo == true)
 {
 	
 	
@@ -29,13 +34,18 @@ if (global.modo == false)
 		{
 	
 			_porco.muda_sprite(spr_inimigo_porco_dano)
-			_porco.dano = true;
+			
 	
 			if (_porco.sprite_index == spr_inimigo_porco_dano)
 				{
-					_porco.velh = 0;
-					_porco.morto = true
-			
+					if (_porco.image_index >= image_number-1)
+					{
+						
+						_porco.dano = true;
+						_porco.velh = 0;
+						_porco.morto = true
+					}
+				
 			
 				}
 			
@@ -89,3 +99,5 @@ if (global.modo == false)
 	}
 	
 }
+
+//show_debug_message(quicadas)

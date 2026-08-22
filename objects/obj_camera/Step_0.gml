@@ -3,6 +3,7 @@ if (instance_exists(obj_player))
 	if (global.player1)
 	{
 		var _target = obj_player;
+		//show_message("kk")
 	}
 	else
 	{

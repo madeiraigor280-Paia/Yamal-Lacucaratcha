@@ -2,6 +2,8 @@
 event_inherited();
 estado = "normal";
 
+colisaoporco =false;
+
 pega_bomba = false;
 
 //Personalizando as variáveis

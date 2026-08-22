@@ -14,7 +14,7 @@ if estado == "dead" exit;
 			
 			if (global.modo)
 			{
-				var inst = instance_create_layer(x - xx, y - 8 + yy, "Projeteis", obj_faca)
+				var inst = instance_create_layer(x - xx, y - 8 + yy, "Projeteis", obj_particula)
 			}
 			else
 			{
