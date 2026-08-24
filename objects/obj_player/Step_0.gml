@@ -7,6 +7,10 @@ if (!_no_chao)
 	velv += grav;
 }
 
+if (keyboard_check_pressed(ord("E")))
+{
+	global.modo = !global.modo;
+}
 
 if (keyboard_check_pressed(ord("R")))
 {

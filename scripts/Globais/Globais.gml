@@ -33,3 +33,12 @@ function morre_player()
 	
 }
 
+function reinicia_jogo()
+{
+	
+	global.vida = global.max_vida
+	
+	game_restart()	
+	
+	
+}
