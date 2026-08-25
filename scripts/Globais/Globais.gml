@@ -1,3 +1,4 @@
+
 global.player1 = true;
 
 global.tiro_clone = true;
@@ -10,6 +11,10 @@ global.mostra_hud = true
 global.timer = 0
 
 global.modo = false;
+
+global.bola = 1;
+global.max_bola = 5;
+global.tempo_bola = 300;
 
 function brilho_efect(xscl,yscl,cor,alp)
 {
@@ -30,14 +35,16 @@ function morre_player()
 	{
 		obj_player.estado = "dead";	
 	}
-	
+	global.morreu = false;
 }
 
 function reinicia_jogo()
 {
 	
-	global.vida = global.max_vida
+	global.vida = global.max_vida;
+	global.player1 = true;
 	
+	global.morreu = false;
 	game_restart()	
 	
 	

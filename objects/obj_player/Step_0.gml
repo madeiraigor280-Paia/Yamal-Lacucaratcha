@@ -197,6 +197,15 @@ switch(estado)
 	
 }
 
+//Fazendo ele ganhar ou perder escudo
+if (global.bola < global.max_bola)
+if (timer_bola >= global.tempo_bola)
+{
+	global.bola++;	
+	timer_bola = 0
+}
+
+timer_bola++;
 
 
 var _dire = point_direction(x, y, mouse_x, mouse_y)

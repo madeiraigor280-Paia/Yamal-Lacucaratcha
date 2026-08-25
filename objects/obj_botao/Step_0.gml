@@ -22,6 +22,7 @@ if (_mouse_sobre)
 	
 	//Ajustando o valor da cor
 	tween(id, "valor_cor", 1, tween_animation.bounce, 30)
+	tween(id, "image_angle", 0, tween_animation.back, 30)
 	
 	//Checando se a pessoa clicou em mim
 	if (_mouse_click)
@@ -29,6 +30,7 @@ if (_mouse_sobre)
 		//Se ele acertou
 		if (resposta_certa)
 		{
+			_novo_ang = image_angle + 90;
 			//Aumentando ainda mais as escalas
 			tween(id, "image_xscale", escala_x * 3, tween_animation.back, 10, )
 			tween(id, "image_yscale", escala_y * 3, tween_animation.back, 10)
@@ -37,16 +39,19 @@ if (_mouse_sobre)
 		
 			tween(id, "valor_cor", 1.2, tween_animation.back, 10)
 			
+			tween(id, "image_angle", _novo_ang, tween_animation.back, 10)
 			screenshake(10)
 			
-			show_message("Você acertou!!")
+			//show_message("Você acertou!!")
 		}
 		else
 		{
+			_novo_ang = image_angle - 90;
 			//Aumentando ainda mais as escalas
-			tween(id, "image_xscale", escala_x * 2, tween_animation.bounce_in, 20, )
-			tween(id, "image_yscale", escala_y * 3, tween_animation.bounce_in, 20)
-			tween(id, "escala_texto", escala_y * 10, tween_animation.bounce_in, 20)
+			tween(id, "image_xscale", escala_x * 100, tween_animation.back, 3000, )
+			tween(id, "image_yscale", escala_y * 100, tween_animation.back,3080)
+			tween(id, "escala_texto", escala_y * 20, tween_animation.back, 180)
+			tween(id, "image_angle", _novo_ang, tween_animation.back, 10)
 			
 			screenshake(20)
 			
@@ -58,7 +63,7 @@ if (_mouse_sobre)
 			
 			audio_play_sound(snd_resposta_errada, 0, 0, , , _pitch)
 			
-			show_message("Você errou! Burro!")
+			//show_message("Você errou! Burro!")
 			
 			global.vida--;
 			
@@ -91,6 +96,7 @@ else //Se o mouse não está em cima de mim, ele esta fora de mim
 
 	//Voltando ao valor da cor a 0
 	tween(id, "valor_cor", 0, tween_animation.elastic, 30)
+	tween(id, "image_angle", 0, tween_animation.back, 10)
 	
 	//image_blend = cor1
 }

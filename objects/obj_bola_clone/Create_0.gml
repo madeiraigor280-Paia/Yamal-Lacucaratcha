@@ -1,3 +1,4 @@
+global.bola--;
 pontoy = y;
 //O quão rapido ele sobe e desce
 frequencia = 0.03;

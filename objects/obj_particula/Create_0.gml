@@ -1,3 +1,4 @@
+global.bola--;
 //iniciando contador de quicada da partícula
 quicada=0;
 //variavel que faz com que o player não se ricocheteie quando atirar
