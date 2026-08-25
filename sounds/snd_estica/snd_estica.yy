@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_musica_fundo",
+  "%Name":"snd_estica",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":0.28984126,
   "exportDir":"",
-  "name":"snd_musica_fundo",
+  "name":"snd_estica",
   "parent":{
-    "name":"Sons",
-    "path":"folders/Sons.yy",
+    "name":"Menu",
+    "path":"folders/Sons/Menu.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_musica_fundo.mp3",
-  "volume":0.68,
+  "soundFile":"snd_estica.ogg",
+  "volume":1.0,
 }
