@@ -32,6 +32,13 @@ for (var i = 0; i < qtd; i++)
 			_margem = alt / 4;
 		}
 		
+		var _enter = keyboard_check_pressed(vk_enter)
+		
+		if (_enter)
+		{
+			transicao_simples(menu_rooms[i])	
+		}
+		
 		
 	}
 	
