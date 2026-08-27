@@ -1,109 +1,167 @@
-if cutscene = true{
-	vspeed = + 10
-	cooldowncutscene = 10
-	image_xscale = 0.5
-	image_yscale = 0.5
-	
-}
-
-if cutscene = false{
-	vspeed = 0;	
-	image_xscale = lerp(0.5, 1, 0.15)
-	image_yscale = lerp(0.5, 1, 0.15)
-	
-	
-}
-
-if cutscene = true and y > 192 and walking = false{
-	cutscene = false
-	cooldownactionboss = 500;
-
-}
-
-if cooldowncutscene > 1 and cooldowncutscene< 3{
-	walking = true	
-}
-
-cooldowncutscene = cooldowncutscene - 1
-cooldownactionboss = cooldownactionboss - 1
-
-if walking = true and cooldownactionboss>1{
-	if wl = true{
-		hspeed = -8	
-		
-	}
-	
-	if wr = true{
-		hspeed = 8
-			
-	}
-	if wl = true and cooldownwalking< 0 and place_meeting(x, y, obj_chao){
-	cooldownwalking = 10
-	wl = false
-	wr = true;
-		
-	}
-	
-	if wr = true and cooldownwalking< 0 and place_meeting(x, y, obj_chao){
-	cooldownwalking = 10
-	wr = false
-	wl = true;
-	
-	}
-}
-
-cooldownwalking = cooldownwalking - 1;
-
-if walking = true and cooldownactionboss<1{
-	if x != 512 and hspeed != 0{
-		move_towards_point(512, y, 8)
-		
-	}
-	
-	if x = 512{
-		hspeed = 0;	
-	}
-	
-	if hspeed = 0{
-		walking = false;
-		cooldownactionboss = 500
-		shooting = true;
-	}
-	
-}
-
-if shooting = true and cooldownactionboss>1{
-	if cooldownshooting<0{
-		instance_create_depth(obj_boss2.x, obj_boss2.y, -1, obj_tiro_boss)
-		cooldownshooting = 30
-	}
-	
-}
-
-cooldownshooting = cooldownshooting - 1
-
-if shooting = true and cooldownactionboss<0{
-	shooting = false
-	cooldownactionboss = 300
-	tired = true;
-	
-}
-
-if tired = true and cooldownactionboss<0{
-	tired = false;
-	cooldownactionboss = 500
-	walking = true;
-	
-}
-
-
-
-if place_meeting(x, y, obj_tiro_player){
-	sprite_index = spr_original_hit
-	
-}
-else
+switch(estado)
 {
-	sprite_index = spr_original	
-}
+	case "entrando":
+	{
+		if cutscene = true and entrando > 0{
+		vspeed = + 1
+		cooldowncutscene = 10
+		entrando--;
+		
+		image_xscale = 0.5
+		image_yscale = 0.5
+		
+		sprite_index = spr_boss_pessi_idle
+		
+		
+	
+	}
+	else
+	{
+		image_xscale = lerp(image_xscale, 1, 0.1)
+		image_yscale = lerp(image_yscale, 1, 0.1)
+		vspeed = 0;
+		estado = "Walking";	
+	}
+	
+	
+	break;
+	
+	
+	
+	}
+	case "Walking":
+	{
+		cooldownwalking--;
+		
+		
+		sprite_index = spr_boss_pessi_idle
+		if (!ja_andei)
+		{
+			
+			ja_andei = true
+			hspeed = choose(-8, 8)
+			//ja_bati_na_parede--;
+			
+			
+		}
+		
+	
+	var _parede = place_meeting(x + hspeed, y, obj_chao);
+	
+	if (_parede)
+	{
+		hspeed = -hspeed
+		
+		//show_message("kkk")
+		
+	
+	}
+	
+		if (cooldownwalking <= 0)
+		{
+			estado = "Roda_ataque";
+			
+		}
+	}
+	break;
+	
+	case "Roda_ataque":
+	{
+		if (estado != "Walking" and entrei_no_ataque == false)
+		{
+			//Vou para o ataque
+			entrei_no_ataque = true;
+			estado = "Atacando";
+			
+		}
+		
+		
+	}
+	break;
+	case "Atacando":
+	{
+		hspeed = 0;
+		//Variaveis de controle para atacar
 
+		
+		
+		//Caso escolha a string, faça isso E não escolhi ainda
+		if (ataques == "Laser")
+		{
+			
+			hspeed = 0;
+			muda_sprite(spr_boss_pessi_laser)
+			atacando(spr_boss_pessi_laser, 16, 29, sprite_width , - sprite_height /2, 1, 1, "Taunt");
+			
+			//if (image_index >= image_number-1)
+			//{
+			//	estado = "Taunt";	
+				
+			//}
+			
+			
+			
+			
+			
+			
+		}
+		else if (ataques == "Bola")
+		{
+			muda_sprite(spr_boss_pessi_bola)
+			//atacando(spr_boss_pessi_bola, 9, 14, sprite_width / 2, - sprite_height/3, 2, 2, "Taunt");
+			atacando(spr_boss_pessi_bola, 9, 12, sprite_width , - sprite_height /2, 1, 1, "Taunt");
+			//if (image_index >= image_number-1)
+			//{
+			//	estado = "Taunt";
+				
+			//}
+			
+			
+			
+			
+		}
+		else if (ataques == "Summonar")
+		{
+			muda_sprite(spr_boss_pessi_summon)
+			atacando(spr_boss_pessi_summon, 2, 4, sprite_width / 2, - sprite_height/3, 2, 2, "Taunt");
+			//if (image_index >= image_number-1)
+			//{
+				
+			//	estado = "Taunt";
+			//}
+			
+			
+			
+		}
+	}
+	break;
+	
+	
+	case "Taunt":
+	{
+		
+		sprite_index = spr_boss_pessi_idle;
+		
+		//Paro um pouco ele
+		hspeed = 0;
+		//Zero as variaveis
+		entrei_no_ataque = false;
+		//Não andei
+		ja_andei = false;
+		cooldownwalking = 500;
+		
+		//if (x >= room_width/2)
+		//{
+		//	vspeed = lerp(vspeed, room_width /2, 3)	
+			
+		//}
+		
+		
+		
+		
+	}
+	
+	break;
+}
+cooldowncutscene--;
+ja_bati_na_parede--;
