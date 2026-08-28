@@ -9,6 +9,8 @@ colisaopolicial= false;
 colisaoplayer= false;
 //variavel pra evitar várias colisões da partícula numa mesma colisão com a parede
 colisaoparede= false;
+
+
 // define quantas vezes a bolinha quica nos objetos antes de ser destruída
 max_quicada=obj_player.max_quicadas
 colisaocutcene = false;

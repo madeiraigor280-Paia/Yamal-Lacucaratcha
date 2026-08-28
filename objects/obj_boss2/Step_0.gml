@@ -144,6 +144,8 @@ switch(estado)
 			muda_sprite(spr_boss_pessi_summon)
 			atacando(spr_boss_pessi_summon, 2, 4, -59 , -sprite_width + 20, xscale_dano_largura * 4.5, xscale_dano * 5, "Taunt");
 			escolhi = true
+			
+			crio_naves();
 			//if (image_index >= image_number-1)
 			//{
 				
@@ -159,6 +161,7 @@ switch(estado)
 	
 	case "Taunt":
 	{
+		ataques = choose("Laser", "Bola", "Summonar");
 		tempo_taunt--;
 		sprite_index = spr_boss_pessi_idle;
 		criei_bolas = false;
@@ -171,7 +174,7 @@ switch(estado)
 		ja_andei = false;
 		cooldownwalking = 500;
 		posso = true;
-		
+		criei_naves = false;
 		//if (x >= room_width/2)
 		//{
 		//	vspeed = lerp(vspeed, room_width /2, 3)	

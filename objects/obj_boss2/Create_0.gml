@@ -11,7 +11,7 @@ shooting = false
 cooldownshooting = 0;
 tired = false;
 
-vida_max = 100;
+vida_max = 450;
 vida_atual = vida_max;
 
 dano = noone
@@ -34,6 +34,8 @@ ataques = choose("Laser", "Bola", "Summonar")
 
 alpha = 1;
 color = c_white;
+
+criei_naves = false;
 
 //Variavel para o tamanho do dano
 xscale_dano = sprite_width / sprite_get_width
@@ -165,5 +167,17 @@ cria_bolas = function(_image_min = 1)
 	
 	
 }
+
+crio_naves = function()
+{
+	if (!criei_naves)
+	{
+		instance_create_layer(x - 150, y - 50, "Inimigos", obj_inimigo_1)
+		instance_create_layer(x + 6, y - 50, "Inimigos", obj_inimigo_1)
+		criei_naves = true;
+	}
+	
+}
+
 
 #endregion

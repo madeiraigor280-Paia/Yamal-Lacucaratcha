@@ -1,0 +1,2 @@
+colisaonave = false;
+

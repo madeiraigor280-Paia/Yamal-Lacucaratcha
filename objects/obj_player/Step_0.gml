@@ -164,7 +164,7 @@ switch(estado)
 	break;
 	
 	case "dead":
-		mudando_sprite(spr_yamal_dead);
+		mudando_sprite(spr_yamal_morte);
 		
 		timer_reinicia--;
 		velv = 0;
