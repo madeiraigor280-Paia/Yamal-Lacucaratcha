@@ -1,5 +1,5 @@
 quicada = 0;
-max_quicada = random_range(5, 8);
+max_quicada = random_range(2, 3);
 colisaoplayer = false;
 colisaoparede = false;
 pode_colidir = false;

@@ -1,7 +1,7 @@
 alarm[0] = game_get_speed(gamespeed_fps) * 2;
 max_vida = irandom_range(2, 4);
 vida = max_vida;
-hspeed = choose(4, -4);
+hspeed = choose(2, -2);
 posso_dano = false;
 
 alpha = 0;
@@ -12,6 +12,7 @@ tempo_dano = 90;
 
 timer_dano = 0;
 
+//tempo_andando = choose(500, 800)
 
 andando = function()
 {

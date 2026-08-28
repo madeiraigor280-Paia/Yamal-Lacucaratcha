@@ -34,14 +34,14 @@ switch(estado)
 	case "Walking":
 	{
 		cooldownwalking--;
-		
+		tempo_taunt = 250;
 		
 		sprite_index = spr_boss_pessi_idle;
 		if (!ja_andei)
 		{
 			
 			ja_andei = true
-			hspeed = choose(-8, 8)
+			hspeed = choose(-4, 4)
 			//ja_bati_na_parede--;
 			
 			
@@ -100,7 +100,7 @@ switch(estado)
 			hspeed = 0;
 			//
 			//uda_sprite(spr_boss_pessi_laser)
-			atacando(spr_boss_pessi_laser1, 16, 28, - 30, -50, xscale_dano * 2, xscale_dano * 10, "Taunt");
+			atacando(spr_boss_pessi_laser_lucca, 16, 28, - 30, -50, xscale_dano * 2, xscale_dano * 10, "Taunt");
 			escolhi = true
 			//if (image_index >= image_number-1)
 			//{
@@ -172,7 +172,7 @@ switch(estado)
 		entrei_no_ataque = false;
 		//Não andei
 		ja_andei = false;
-		cooldownwalking = 500;
+		cooldownwalking = 350;
 		posso = true;
 		criei_naves = false;
 		//if (x >= room_width/2)
@@ -196,6 +196,7 @@ switch(estado)
 	case "Dead":
 	{
 		hspeed = 0;
+		alpha = 0;
 		if (vida_atual < 0)
 		{
 			muda_sprite(spr_boss_pessi_dead);
@@ -213,14 +214,16 @@ switch(estado)
 }
 cooldowncutscene--;
 ja_bati_na_parede--;
+
+if (estado == "Dead") exit;
 leva_dano(spr_boss_pessi_hit);
 
 
 
-if (keyboard_check_pressed(ord("E")))
-{
-	estado	= "Atacando";
-	ataques = choose("Laser", "Bola", "Summonar");
+//if (keyboard_check_pressed(ord("E")))
+//{
+//	estado	= "Atacando";
+//	ataques = choose("Laser", "Bola", "Summonar");
 	
 	
-}
+//}

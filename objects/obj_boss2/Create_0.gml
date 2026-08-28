@@ -6,7 +6,7 @@ walking = 0;
 cooldownactionboss = 0
 wl = true;
 wr = false
-cooldownwalking = 500;
+cooldownwalking = 350;
 shooting = false
 cooldownshooting = 0;
 tired = false;
@@ -20,7 +20,7 @@ estado = "entrando";
 //Cooldown do boss para descer
 entrando = 415;
 
-tempo_taunt = 300;
+tempo_taunt = 250;
 
 ja_andei = false
 ja_bati_na_parede = 0;
@@ -102,7 +102,7 @@ atacando = function(_sprite_index, _image_index_min, _image_index_max, _dist_x, 
 
 leva_dano = function(_sprite)
 {
-
+	
 	var _tiro_player = instance_place(x, y, obj_colisao_dano_bola)
 	
 	
@@ -172,8 +172,8 @@ crio_naves = function()
 {
 	if (!criei_naves)
 	{
-		instance_create_layer(x - 150, y - 50, "Inimigos", obj_inimigo_1)
-		instance_create_layer(x + 6, y - 50, "Inimigos", obj_inimigo_1)
+		instance_create_layer(x, y - 50, "Inimigos", obj_inimigo_1)
+		//instance_create_layer(x, y - 50, "Inimigos", obj_inimigo_1)
 		criei_naves = true;
 	}
 	
