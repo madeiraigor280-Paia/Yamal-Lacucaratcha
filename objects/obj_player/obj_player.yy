@@ -40,8 +40,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle",
-    "path":"sprites/spr_player_idle/spr_player_idle.yy",
+    "name":"spr_yamal_idle",
+    "path":"sprites/spr_yamal_idle/spr_yamal_idle.yy",
   },
   "spriteMaskId":{
     "name":"spr_player_idle1",

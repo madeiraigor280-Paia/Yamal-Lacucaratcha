@@ -10,7 +10,9 @@ switch(estado)
 		image_xscale = 0.5
 		image_yscale = 0.5
 		
-		sprite_index = spr_boss_pessi_idle
+		sprite_index = spr_boss_pessi_idle;
+		
+		
 		
 		
 	
@@ -34,13 +36,14 @@ switch(estado)
 		cooldownwalking--;
 		
 		
-		sprite_index = spr_boss_pessi_idle
+		sprite_index = spr_boss_pessi_idle;
 		if (!ja_andei)
 		{
 			
 			ja_andei = true
 			hspeed = choose(-8, 8)
 			//ja_bati_na_parede--;
+			
 			
 			
 		}
@@ -69,6 +72,8 @@ switch(estado)
 	{
 		if (estado != "Walking" and entrei_no_ataque == false)
 		{
+			//Resetando o a variavel
+			ataques = choose("Laser", "Bola", "Summonar")
 			//Vou para o ataque
 			entrei_no_ataque = true;
 			estado = "Atacando";
@@ -80,19 +85,23 @@ switch(estado)
 	break;
 	case "Atacando":
 	{
+		var _escolha = choose("Laser", "Bola", "Summonar")
+		
 		hspeed = 0;
+		vspeed = 0;
 		//Variaveis de controle para atacar
 
 		
-		
+		//show_message("kkk")
 		//Caso escolha a string, faça isso E não escolhi ainda
 		if (ataques == "Laser")
 		{
 			
 			hspeed = 0;
-			muda_sprite(spr_boss_pessi_laser)
-			atacando(spr_boss_pessi_laser, 16, 29, sprite_width , - sprite_height /2, 1, 1, "Taunt");
-			
+			//
+			//uda_sprite(spr_boss_pessi_laser)
+			atacando(spr_boss_pessi_laser1, 16, 28, - 30, -50, xscale_dano * 2, xscale_dano * 10, "Taunt");
+			escolhi = true
 			//if (image_index >= image_number-1)
 			//{
 			//	estado = "Taunt";	
@@ -109,7 +118,17 @@ switch(estado)
 		{
 			muda_sprite(spr_boss_pessi_bola)
 			//atacando(spr_boss_pessi_bola, 9, 14, sprite_width / 2, - sprite_height/3, 2, 2, "Taunt");
-			atacando(spr_boss_pessi_bola, 9, 12, sprite_width , - sprite_height /2, 1, 1, "Taunt");
+			
+			if (!criei_bolas and image_index >= 10)
+			{
+				cria_bolas();
+				
+				criei_bolas = true;
+				
+			}
+			atacando(spr_boss_pessi_bola, 10, 12, -59 , -sprite_width, xscale_dano_largura * 4.5, xscale_dano * 5, "Taunt");
+			
+			
 			//if (image_index >= image_number-1)
 			//{
 			//	estado = "Taunt";
@@ -123,7 +142,8 @@ switch(estado)
 		else if (ataques == "Summonar")
 		{
 			muda_sprite(spr_boss_pessi_summon)
-			atacando(spr_boss_pessi_summon, 2, 4, sprite_width / 2, - sprite_height/3, 2, 2, "Taunt");
+			atacando(spr_boss_pessi_summon, 2, 4, -59 , -sprite_width + 20, xscale_dano_largura * 4.5, xscale_dano * 5, "Taunt");
+			escolhi = true
 			//if (image_index >= image_number-1)
 			//{
 				
@@ -139,9 +159,10 @@ switch(estado)
 	
 	case "Taunt":
 	{
-		
+		tempo_taunt--;
 		sprite_index = spr_boss_pessi_idle;
-		
+		criei_bolas = false;
+		escolhi = false
 		//Paro um pouco ele
 		hspeed = 0;
 		//Zero as variaveis
@@ -149,6 +170,7 @@ switch(estado)
 		//Não andei
 		ja_andei = false;
 		cooldownwalking = 500;
+		posso = true;
 		
 		//if (x >= room_width/2)
 		//{
@@ -158,10 +180,44 @@ switch(estado)
 		
 		
 		
+		if (tempo_taunt <= 0)
+		{
+			estado = "Walking";	
+			
+		}
 		
 	}
 	
 	break;
+	
+	case "Dead":
+	{
+		hspeed = 0;
+		if (vida_atual < 0)
+		{
+			muda_sprite(spr_boss_pessi_dead);
+			
+			if (image_index >= image_number-1)
+			{
+				instance_destroy();	
+			}
+			
+		}
+		
+	}
+	
+		break;
 }
 cooldowncutscene--;
 ja_bati_na_parede--;
+leva_dano(spr_boss_pessi_hit);
+
+
+
+if (keyboard_check_pressed(ord("E")))
+{
+	estado	= "Atacando";
+	ataques = choose("Laser", "Bola", "Summonar");
+	
+	
+}

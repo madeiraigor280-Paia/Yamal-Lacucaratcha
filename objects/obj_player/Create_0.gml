@@ -123,14 +123,14 @@ estado_normal = function()
 		if (velh != 0)
 		{
 			//Mudo a sprite
-			sprite_index = spr_player_run;
+			sprite_index = spr_yamal_run;
 			//Faço ele olhar para onde eu estou indo
 			image_xscale = sign(velh);
 			
 		}
 		else
 		{
-			sprite_index = spr_player_idle;
+			sprite_index = spr_yamal_idle;
 			
 				
 			
@@ -158,12 +158,12 @@ estado_normal = function()
 		//Mudando a sprite
 		if (velv < 0)
 		{
-			sprite_index = spr_player_jump;
+			sprite_index = spr_yamal_jump;
 			
 		}
 		else
 		{
-			sprite_index = spr_player_fall;
+			sprite_index = spr_yamal_fall;
 			
 			//Se eu estou indo para baixo, ai eu posso cair na cabeça do inimigo
 			var _inimigo	= instance_place(x, y + 6, obj_inimigo_pai)
@@ -200,8 +200,10 @@ estado_normal = function()
 	if (dano)
 	{
 		
-		sprite_index = spr_player_hit;
+		sprite_index = spr_yamal_hit;
 		velh = 0;
+		
+		
 		if (posso_perder_vida)
 		{
 			global.vida--;

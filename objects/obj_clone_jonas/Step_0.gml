@@ -45,16 +45,16 @@ var _chao = place_meeting(x, y + 1, obj_chao);
 	
 
 //Deixando o jogo em tela cheia quando eu apertar o F11
-//Ou tirar de tela cheia
-if (keyboard_check_pressed(vk_f11))
-{
-	//Pegando se a tela ta cheia
-	var _full = window_get_fullscreen();
+////Ou tirar de tela cheia
+//if (keyboard_check_pressed(vk_f11))
+//{
+//	//Pegando se a tela ta cheia
+//	var _full = window_get_fullscreen();
     
-	//Deixando a tela cheia se ela não esta cheia
-	//Ou restaurando a tela se ela esta cheia
-	window_set_fullscreen(!_full);
-}
+//	//Deixando a tela cheia se ela não esta cheia
+//	//Ou restaurando a tela se ela esta cheia
+//	window_set_fullscreen(!_full);
+//}
 
 
 if (global.transicao != false) exit;

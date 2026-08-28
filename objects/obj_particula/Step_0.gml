@@ -11,3 +11,13 @@ else image_angle +=20;
 //alterando a escala 
 image_xscale = 1.5
 image_yscale = image_xscale
+
+if (instance_exists(bola_colisao))
+{
+	bola_colisao.x = x + 5;
+	bola_colisao.y = y;
+	
+}
+
+//Eu sou o pai da bola
+bola_colisao.pai = id;

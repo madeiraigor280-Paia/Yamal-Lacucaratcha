@@ -56,15 +56,15 @@ var _chao = place_meeting(x, y + 1, obj_chao);
 
 //Deixando o jogo em tela cheia quando eu apertar o F11
 //Ou tirar de tela cheia
-if (keyboard_check_pressed(vk_f11))
-{
-	//Pegando se a tela ta cheia
-	var _full = window_get_fullscreen();
+//if (keyboard_check_pressed(vk_f11))
+//{
+//	//Pegando se a tela ta cheia
+//	var _full = window_get_fullscreen();
     
-	//Deixando a tela cheia se ela não esta cheia
-	//Ou restaurando a tela se ela esta cheia
-	window_set_fullscreen(!_full);
-}
+//	//Deixando a tela cheia se ela não esta cheia
+//	//Ou restaurando a tela se ela esta cheia
+//	window_set_fullscreen(!_full);
+//}
 
 
 if (global.transicao != false) exit;
@@ -83,9 +83,9 @@ switch(estado)
 		tempo_dash--;
 		tempo_cooldown_dash = 0
 		
-		if (sprite_index != spr_player_jump)
+		if (sprite_index != spr_yamal_jump)
 		{
-			sprite_index = spr_player_jump;
+			sprite_index = spr_yamal_jump;
 		}
 		
 		if (!dei_dash)
@@ -164,7 +164,7 @@ switch(estado)
 	break;
 	
 	case "dead":
-		mudando_sprite(spr_player_dead);
+		mudando_sprite(spr_yamal_dead);
 		
 		timer_reinicia--;
 		velv = 0;

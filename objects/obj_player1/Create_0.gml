@@ -15,7 +15,7 @@ grav = .2;
 //Controles
 right = noone;
 left  = noone;
-jump  = noone;
+//jump  = noone;
 
 //Dash
 dash  = noone;
@@ -41,7 +41,7 @@ pega_controles = function()
 	right = keyboard_check(ord("D"));
 	left  = keyboard_check(ord("A"));
 	
-	jump  = keyboard_check_pressed(ord("K"));
+	//jump  = keyboard_check_pressed(ord("K"));
 	
 	dash = keyboard_check_pressed(ord("L"));
 	

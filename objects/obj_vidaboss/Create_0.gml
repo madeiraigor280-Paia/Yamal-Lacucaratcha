@@ -1,1 +1,1 @@
-global.vidaboss = 100;
+//global.vidaboss = 100;

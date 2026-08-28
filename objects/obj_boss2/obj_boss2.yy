@@ -11,8 +11,8 @@
   "name":"obj_boss2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objetos",
-    "path":"folders/Objetos.yy",
+    "name":"Boss",
+    "path":"folders/Objetos/Boss.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boss_pessi_idle",
-    "path":"sprites/spr_boss_pessi_idle/spr_boss_pessi_idle.yy",
+    "name":"spr_boss_pessi_idle_1",
+    "path":"sprites/spr_boss_pessi_idle_1/spr_boss_pessi_idle_1.yy",
   },
   "spriteMaskId":{
     "name":"spr_original",

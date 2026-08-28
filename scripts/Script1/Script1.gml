@@ -32,7 +32,7 @@ function transicao_simples(_room)
 
 function screenshake(_shake)
 {
-	var obj_shake = instance_create_layer(0, 0, layer, obj_screenshake)
+	var obj_shake = instance_create_layer(0, 0, "Colisores", obj_screenshake)
 	obj_shake.shake = _shake
 	
 }

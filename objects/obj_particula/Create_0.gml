@@ -22,3 +22,4 @@ alvos_acertados = ds_list_create();
 
 alarm[3]=40;
 
+bola_colisao = instance_create_layer(x, y, "Colisores", obj_colisao_dano_bola)

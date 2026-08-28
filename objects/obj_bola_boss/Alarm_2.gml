@@ -1,0 +1,1 @@
+colisaoparede=false;

@@ -1,4 +1,9 @@
 
+
+//Todas as dificuldades
+global.dificuldades = [1, 2, 3]
+
+
 global.player1 = true;
 
 global.tiro_clone = true;
@@ -10,11 +15,11 @@ global.mostra_hud = true
 
 global.timer = 0
 
-global.modo = false;
+global.modo = true;
 
 global.bola = 1;
 global.max_bola = 5;
-global.tempo_bola = 300;
+global.tempo_bola = 10;
 
 function brilho_efect(xscl,yscl,cor,alp)
 {
