@@ -20,3 +20,4 @@ metodo_exemplo = function()
 {	
 	show_message(texto)
 }
+

@@ -41,6 +41,7 @@ if (_mouse_sobre)
 			
 			tween(id, "image_angle", _novo_ang, tween_animation.back, 10)
 			screenshake(10)
+			transicao_simples(rm_meu_destino)
 			
 			//show_message("Você acertou!!")
 		}
@@ -68,7 +69,7 @@ if (_mouse_sobre)
 			global.vida--;
 			
 			
-			
+			transicao_simples(rm_meu_destino)
 			
 			
 			

@@ -63,10 +63,10 @@ estado = "normal";
 image_speed = 0;
 
 //Criando a transição de saida da porta SE eu não estou na tela inicia
-if (room != rm_tela_inicial)
-{
-	layer_sequence_create("Transicao", x, y, sq_transicao_out);
-}
+//if (room != rm_tela_inicial)
+//{
+//	layer_sequence_create("Transicao", x, y, sq_transicao_out);
+//}
 
 inputs = {
 		left	: ord("A"),

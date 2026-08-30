@@ -11,7 +11,7 @@ shooting = false
 cooldownshooting = 0;
 tired = false;
 
-vida_max = 450;
+vida_max = 450 * global.dificuldade;
 vida_atual = vida_max;
 
 dano = noone
@@ -103,7 +103,7 @@ atacando = function(_sprite_index, _image_index_min, _image_index_max, _dist_x, 
 leva_dano = function(_sprite)
 {
 	
-	var _tiro_player = instance_place(x, y, obj_colisao_dano_bola)
+	var _tiro_player = instance_place(x, y, obj_particula);
 	
 	
 	

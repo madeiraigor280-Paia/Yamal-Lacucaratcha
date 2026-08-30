@@ -1,6 +1,8 @@
 //O tempo da bola
 timer_bola = 0;
 
+
+
 velh		= 0;
 velv		= 0;
 vel			= 4;

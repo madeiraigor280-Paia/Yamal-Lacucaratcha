@@ -38,6 +38,9 @@
     {"$GMObjectProperty":"v2","%Name":"resposta_certa","filters":[],"listItems":[],"multiselect":false,"name":"resposta_certa","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
     {"$GMObjectProperty":"v2","%Name":"cor_acerto","filters":[],"listItems":[],"multiselect":false,"name":"cor_acerto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF12B1EA","varType":7,},
     {"$GMObjectProperty":"v2","%Name":"tamanho_texto","filters":[],"listItems":[],"multiselect":false,"name":"tamanho_texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"rm_meu_destino","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"name":"rm_meu_destino","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"rm_quiz_1","path":"rooms/rm_quiz_1/rm_quiz_1.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"rm_quiz_1","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

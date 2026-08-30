@@ -1,7 +1,7 @@
 
 
 //Todas as dificuldades
-global.dificuldades = [1, 2, 3]
+global.dificuldade = 1;
 
 
 global.player1 = true;

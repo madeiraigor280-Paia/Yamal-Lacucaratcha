@@ -197,6 +197,7 @@ switch(estado)
 	
 }
 
+
 //Fazendo ele ganhar ou perder escudo
 if (global.bola < global.max_bola)
 if (timer_bola >= global.tempo_bola)
