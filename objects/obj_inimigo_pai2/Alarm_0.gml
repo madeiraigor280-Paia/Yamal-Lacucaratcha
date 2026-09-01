@@ -1,0 +1,1 @@
+levei_dano = false;

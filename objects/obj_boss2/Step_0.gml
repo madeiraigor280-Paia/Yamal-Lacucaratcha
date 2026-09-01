@@ -1,3 +1,14 @@
+var _tam_sprite = bbox_right-bbox_left;
+
+tam_barra = 2 * (_tam_sprite / 2);
+
+x_barra = x + _tam_sprite/2 - tam_barra/2;
+
+if (alarm[1] <= 0){
+		
+hp_secundario = lerp(hp_secundario, vida_atual, 0.1)
+}
+
 switch(estado)
 {
 	case "entrando":

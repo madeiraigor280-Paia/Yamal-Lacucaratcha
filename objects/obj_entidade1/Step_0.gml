@@ -1,0 +1,13 @@
+// Step do obj_entidade
+//if (velh != 0)
+//{
+//    xscale = sign(velh);
+//}
+//image_xscale = xscale;
+
+//Exibindo meu estado quando o usúario mandar
+//if (position_meeting(mouse_x, mouse_y, id))
+//{
+//	if (mouse_check_button_released(mb_left))
+//	mostra_estado = !mostra_estado;
+//}

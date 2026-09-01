@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_boss_pessi_laser1",
-  "bboxMode":0,
-  "bbox_bottom":599,
+  "bboxMode":2,
+  "bbox_bottom":377,
   "bbox_left":28,
-  "bbox_right":269,
+  "bbox_right":249,
   "bbox_top":153,
   "collisionKind":1,
   "collisionTolerance":0,

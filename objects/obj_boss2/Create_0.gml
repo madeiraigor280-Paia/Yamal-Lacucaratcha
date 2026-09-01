@@ -35,7 +35,15 @@ ataques = choose("Laser", "Bola", "Summonar")
 alpha = 1;
 color = c_white;
 
+tomei_dano = false;
+
 criei_naves = false;
+posso_tomar_dano  = false
+
+x_barra = 0;
+tam_barra = 0;
+
+hp_secundario = vida_max;
 
 //Variavel para o tamanho do dano
 xscale_dano = sprite_width / sprite_get_width
@@ -109,17 +117,37 @@ leva_dano = function(_sprite)
 	
 	
 	//Checando se estou com a sprite certa
-	if (_tiro_player)
+	if (_tiro_player and _tiro_player.colisaoboss == false)
 	{
+		alarm[0] = 60;
+		_tiro_player.colisaoboss = true
+		
+		//if (!posso_tomar_dano)
+		//{
+		//	alarm[0] = 	60;
+		//}
+		
+		//posso_tomar_dano = true;
+		//if (posso_tomar_dano) exit;
+		
+		
+		
+		
 		screenshake(10)
 		audio_play_sound(snd_hit, 1, 0)
 		alpha = 1;
 		_tiro_player.dei_dano = true
 		
 		
-		if (estado != "Atacando" or estado != "entrando")
+		
+		
+		//_tiro_player.colisaoboss = true;
+		if (estado != "Atacando" and estado != "entrando")
 		{
-			vida_atual -= 20
+			
+			vida_atual -= 20;
+			//Depois de 45 frames a barra desce
+			alarm[1] = 45;
 			if (sprite_index != _sprite)
 			{
 				//Iniciando o que for preciso para este estado
