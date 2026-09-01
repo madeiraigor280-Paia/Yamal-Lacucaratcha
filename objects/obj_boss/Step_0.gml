@@ -74,6 +74,8 @@ switch(estado)
 				estado = "attack";
 				//Escolhendo o ataque
 				ataque = irandom(2);
+				posso = true;
+			dano = noone;
 				
 			}
 		
@@ -154,12 +156,20 @@ switch(estado)
 	
 }
 
+
+if (estado == "attack") exit;
 if (!levei_dano)
 {
 	var _tiro_player = instance_place(x, y, obj_particula)	
 	
 	if (_tiro_player and estado != "dead")
 	{
+		if (dano != noone && instance_exists(dano))
+		{
+			instance_destroy(dano);
+			dano = noone;
+		}
+		
 		estado = "hit";
 		levei_dano = true;
 		alarm[0] = 120;

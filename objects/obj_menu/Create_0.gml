@@ -12,7 +12,7 @@ for (var i = 0; i < qtd; i++)
 
 menu = ["Jogar", "Opcoes", "Tutorial", "Sair", "Creditos", "Curiosidades", "Mensagens"]
 menu_2 = ["Inicio rapido", "Mexer nas configuracoes", "Entenda o jogo", "Fechar o jogo", "Quem fez o jogo", "Entender os devs", "Veja o que queremos falar "]
-menu_rooms = [rm_tela_inicial, rm_configuracoes, rm_tutorial, rm_saida, rm_creditos, rm_curiosidades, rm_mensagens];
+menu_rooms = [rm_quiz_1, rm_configuracoes, rm_tutorial, rm_saida, rm_creditos, rm_curiosidades, rm_mensagens];
 //Posição seleciona do meu menu
 indice = 3;
 

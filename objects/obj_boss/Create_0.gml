@@ -18,5 +18,7 @@ massa = 3;
 taunt_delay = room_speed * 2
 taunt_timer = taunt_delay;
 
+dano = noone;
+
 //Substate
 ataque = irandom(2); //0, 1,2 

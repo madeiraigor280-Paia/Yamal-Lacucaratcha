@@ -497,11 +497,11 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_tela_inicial","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},},
     {"roomId":{"name":"rm_tela_boss","path":"rooms/rm_tela_boss/rm_tela_boss.yy",},},
+    {"roomId":{"name":"rm_tela_menu","path":"rooms/rm_tela_menu/rm_tela_menu.yy",},},
     {"roomId":{"name":"rm_lua","path":"rooms/rm_lua/rm_lua.yy",},},
     {"roomId":{"name":"rm_dificuldades","path":"rooms/rm_dificuldades/rm_dificuldades.yy",},},
-    {"roomId":{"name":"rm_tela_inicial","path":"rooms/rm_tela_inicial/rm_tela_inicial.yy",},},
-    {"roomId":{"name":"rm_tela_menu","path":"rooms/rm_tela_menu/rm_tela_menu.yy",},},
     {"roomId":{"name":"rm_quiz_1","path":"rooms/rm_quiz_1/rm_quiz_1.yy",},},
     {"roomId":{"name":"rm_quiz_2","path":"rooms/rm_quiz_2/rm_quiz_2.yy",},},
     {"roomId":{"name":"rm_quiz_3","path":"rooms/rm_quiz_3/rm_quiz_3.yy",},},
