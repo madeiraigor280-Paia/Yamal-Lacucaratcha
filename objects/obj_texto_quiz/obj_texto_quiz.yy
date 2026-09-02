@@ -30,11 +30,11 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"fonte","filters":[
         "GMFont",
-      ],"listItems":[],"multiselect":false,"name":"fonte","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fnt_dialogo","path":"fonts/fnt_dialogo/fnt_dialogo.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_dialogo","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"fonte","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"fnt_tituloquiz","path":"fonts/fnt_tituloquiz/fnt_tituloquiz.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"fnt_tituloquiz","varType":5,},
     {"$GMObjectProperty":"v2","%Name":"texto","filters":[],"listItems":[],"multiselect":false,"name":"texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"texto","varType":2,},
     {"$GMObjectProperty":"v2","%Name":"cor","filters":[],"listItems":[],"multiselect":false,"name":"cor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
-    {"$GMObjectProperty":"v2","%Name":"cor1","filters":[],"listItems":[],"multiselect":false,"name":"cor1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFFF00FF","varType":7,},
-    {"$GMObjectProperty":"v2","%Name":"cor2","filters":[],"listItems":[],"multiselect":false,"name":"cor2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF0000FF","varType":7,},
+    {"$GMObjectProperty":"v2","%Name":"cor1","filters":[],"listItems":[],"multiselect":false,"name":"cor1","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
+    {"$GMObjectProperty":"v2","%Name":"cor2","filters":[],"listItems":[],"multiselect":false,"name":"cor2","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF000000","varType":7,},
     {"$GMObjectProperty":"v2","%Name":"valor_cor","filters":[],"listItems":[],"multiselect":false,"name":"valor_cor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FFFF0000","varType":7,},
     {"$GMObjectProperty":"v2","%Name":"tamanho_texto","filters":[],"listItems":[],"multiselect":false,"name":"tamanho_texto","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],

@@ -9,7 +9,7 @@ draw_set_valign(1)
 //Configurando a fonte
 draw_set_colour(cor)
 
-draw_set_font(fnt_dialogo)
+draw_set_font(fnt_tituloquiz)
 
 //Desenhando o texto em escala
 //draw_text_transformed(x, y, texto, escala_texto, escala_texto, image_angle)

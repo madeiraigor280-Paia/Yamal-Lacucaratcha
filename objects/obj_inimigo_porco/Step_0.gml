@@ -128,7 +128,7 @@ if (estado == "normal")
 
 }
 
-else if (estado == "fosforo_on")
+else if (estado == "fosforo_on" && !dano)
 {
 	//Mudando a sprite dele
 	if (sprite_index != spr_porco_fosforo_on)
@@ -145,7 +145,7 @@ else if (estado == "fosforo_on")
 		
 	}
 }
-else if (estado == "fosforo_bomba")
+else if (estado == "fosforo_bomba" && !dano)
 {
 	if (sprite_index != spr_porco_fosforo_bomba)
 	{

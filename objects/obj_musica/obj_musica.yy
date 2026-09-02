@@ -29,7 +29,7 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"musica_fundo","filters":[
         "GMSound",
-      ],"listItems":[],"multiselect":false,"name":"musica_fundo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_musica_fundo","path":"sounds/snd_musica_fundo/snd_musica_fundo.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_musica_fundo","varType":5,},
+      ],"listItems":[],"multiselect":false,"name":"musica_fundo","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"snd_musica_principal","path":"sounds/snd_musica_principal/snd_musica_principal.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"snd_musica_principal","varType":5,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
