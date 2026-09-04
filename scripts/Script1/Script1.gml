@@ -28,6 +28,7 @@ function transicao_simples(_room)
 	global.player1 = true;
 
 	global.tiro_clone = true;
+	
 }
 
 function screenshake(_shake)

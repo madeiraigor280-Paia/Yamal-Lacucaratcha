@@ -7,11 +7,14 @@ if (!_no_chao)
 	velv += grav;
 }
 
+
+//Fazendo ele alternar entre modo clone e player
 if (keyboard_check_pressed(ord("E")))
 {
 	global.modo = !global.modo;
 }
 
+//Trocando de corpo
 if (keyboard_check_pressed(ord("R")))
 {
 	if (!global.morreu)

@@ -12,6 +12,8 @@ if (!chao)
     velv += global.GRAVIDADE * massa;
 }
 
+
+
 //State machine
 
 switch(estado)
@@ -178,4 +180,14 @@ if (!levei_dano)
 	}
 	
 	
+}
+
+//Se fui criado pelo sensor
+if (instance_exists(obj_chain_door) && fui_criado_sensor)
+{
+	if (estado == "dead")
+	{
+		obj_chain_door.posso_destruir = true;
+		
+	}
 }

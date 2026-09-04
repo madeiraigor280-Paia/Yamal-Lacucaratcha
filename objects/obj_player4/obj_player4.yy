@@ -15,10 +15,7 @@
     "name":"Player",
     "path":"folders/Objetos/Player.yy",
   },
-  "parentObjectId":{
-    "name":"obj_pai_player1",
-    "path":"objects/obj_pai_player1/obj_pai_player1.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

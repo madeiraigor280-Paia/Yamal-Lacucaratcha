@@ -22,3 +22,5 @@ dano = noone;
 
 //Substate
 ataque = irandom(2); //0, 1,2 
+
+fui_criado_sensor = false;
