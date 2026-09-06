@@ -31,6 +31,17 @@ function transicao_simples(_room)
 	
 }
 
+function transicao_rapida(_room)
+{
+	room_goto(_room);
+	global.player1 = true;
+
+	global.tiro_clone = true;
+	
+	
+}
+
+
 function screenshake(_shake)
 {
 	var obj_shake = instance_create_layer(0, 0, "Colisores", obj_screenshake)

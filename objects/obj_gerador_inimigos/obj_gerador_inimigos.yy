@@ -1,15 +1,16 @@
 {
   "$GMObject":"",
-  "%Name":"obj_start",
+  "%Name":"obj_gerador_inimigos",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_start",
+  "name":"obj_gerador_inimigos",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jonas",
-    "path":"folders/Objetos/Jonas.yy",
+    "name":"Inimigos Voadores",
+    "path":"folders/Objetos/Inimigos Voadores.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +30,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_chao",
-    "path":"sprites/spr_chao/spr_chao.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

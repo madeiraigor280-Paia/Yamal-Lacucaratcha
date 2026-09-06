@@ -198,6 +198,7 @@ cria_bolas = function(_image_min = 1)
 
 crio_naves = function()
 {
+	//Se não criei as naves, eu faço elas
 	if (!criei_naves)
 	{
 		instance_create_layer(x, y - 50, "Inimigos", obj_inimigo_1)

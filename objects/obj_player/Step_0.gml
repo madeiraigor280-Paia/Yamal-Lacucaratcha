@@ -27,6 +27,22 @@ if (keyboard_check_pressed(ord("R")))
 	}
 }
 
+if keyboard_check_pressed(ord("T"))
+{
+	if (instance_exists(obj_clone_jonas))
+	{
+		instance_destroy(obj_clone_jonas)
+		clonei = false
+		cooldown = 0;
+		ja_clonei_na_fase = false;
+		criei_clone = false
+		mudei = false
+		global.player1 = true;
+		
+	}
+	
+}
+
 
 if (!global.player1)
 {
@@ -37,7 +53,7 @@ if (!global.player1)
 	velh = 0;
 	
 	
-	sprite_index = spr_player_idle;
+	sprite_index = spr_yamal_idle;
 	image_blend = c_gray;
 	exit;	
 	
@@ -132,7 +148,7 @@ switch(estado)
 	break;
 	
 	case "in":
-		mudando_sprite(spr_jonas_in);
+		mudando_sprite(spr_yamal_in);
 		
 		
 		//Terminou a animação, para a animação
@@ -151,7 +167,7 @@ switch(estado)
 	break;
 	
 	case "out":
-		mudando_sprite(spr_jonas_out);
+		mudando_sprite(spr_yamal_out);
 		
 
 		
@@ -210,7 +226,7 @@ if (timer_bola >= global.tempo_bola)
 }
 
 timer_bola++;
-
+//show_debug_message(global.dificuldade)
 
 var _dire = point_direction(x, y, mouse_x, mouse_y)
 

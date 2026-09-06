@@ -1,0 +1,1 @@
+criei_inimigos = false

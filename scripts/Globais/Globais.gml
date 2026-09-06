@@ -1,13 +1,15 @@
 
 
 //Todas as dificuldades
-global.dificuldade = 1;
+global.dificuldade = 3;
 
 
 global.player1 = true;
 
 global.tiro_clone = true;
 
+//Debug de fps
+//show_debug_overlay(true)
 
 
 
