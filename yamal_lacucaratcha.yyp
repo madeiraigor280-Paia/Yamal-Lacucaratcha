@@ -242,6 +242,7 @@
     {"id":{"name":"rm_lua","path":"rooms/rm_lua/rm_lua.yy",},},
     {"id":{"name":"rm_mensagens","path":"rooms/rm_mensagens/rm_mensagens.yy",},},
     {"id":{"name":"rm_modelo","path":"rooms/rm_modelo/rm_modelo.yy",},},
+    {"id":{"name":"rm_primeira_cela","path":"rooms/rm_primeira_cela/rm_primeira_cela.yy",},},
     {"id":{"name":"rm_prison_1","path":"rooms/rm_prison_1/rm_prison_1.yy",},},
     {"id":{"name":"rm_quiz_1","path":"rooms/rm_quiz_1/rm_quiz_1.yy",},},
     {"id":{"name":"rm_quiz_2","path":"rooms/rm_quiz_2/rm_quiz_2.yy",},},
@@ -316,6 +317,7 @@
     {"id":{"name":"spr_bala_morteiro","path":"sprites/spr_bala_morteiro/spr_bala_morteiro.yy",},},
     {"id":{"name":"spr_bala","path":"sprites/spr_bala/spr_bala.yy",},},
     {"id":{"name":"spr_barrel","path":"sprites/spr_barrel/spr_barrel.yy",},},
+    {"id":{"name":"spr_bg_cela_primeira","path":"sprites/spr_bg_cela_primeira/spr_bg_cela_primeira.yy",},},
     {"id":{"name":"spr_bg_fac_1","path":"sprites/spr_bg_fac_1/spr_bg_fac_1.yy",},},
     {"id":{"name":"spr_bg_fac_2","path":"sprites/spr_bg_fac_2/spr_bg_fac_2.yy",},},
     {"id":{"name":"spr_bg_fac_3","path":"sprites/spr_bg_fac_3/spr_bg_fac_3.yy",},},
@@ -577,6 +579,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_primeira_cela","path":"rooms/rm_primeira_cela/rm_primeira_cela.yy",},},
     {"roomId":{"name":"rm_tela_menu","path":"rooms/rm_tela_menu/rm_tela_menu.yy",},},
     {"roomId":{"name":"rm_cutcene","path":"rooms/rm_cutcene/rm_cutcene.yy",},},
     {"roomId":{"name":"rm_indo_espaco5","path":"rooms/rm_indo_espaco5/rm_indo_espaco5.yy",},},
