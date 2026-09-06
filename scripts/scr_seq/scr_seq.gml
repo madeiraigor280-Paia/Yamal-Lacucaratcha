@@ -1,12 +1,12 @@
 //Função para avançar para a room inicio
-function scr_seq_inicio()
+function scr_seq_logo()
 {
-	room_goto(rm_inicio);	
+	room_goto(rm_logo);
 	
 }
 
-function vai_para_tutorial()
+function vai_para_dificuldade()
 {
-	room_goto(rm_tutorial)	
+	room_goto(rm_dificuldades)	
 	
 }
