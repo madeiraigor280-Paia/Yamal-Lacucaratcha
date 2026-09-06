@@ -11,14 +11,14 @@ shooting = false
 cooldownshooting = 0;
 tired = false;
 
-vida_max = 450 * global.dificuldade;
+vida_max = 2 * global.dificuldade;
 vida_atual = vida_max;
 
 dano = noone
 
 estado = "entrando";
 //Cooldown do boss para descer
-entrando = 415;
+entrando = 600;
 
 tempo_taunt = 250;
 

@@ -212,6 +212,11 @@ switch(estado)
 		{
 			muda_sprite(spr_boss_pessi_dead);
 			
+			if (instance_exists(obj_portal))
+			{
+				obj_portal.pode_iniciar = true;	
+			}
+			
 			if (image_index >= image_number-1)
 			{
 				instance_destroy();	

@@ -27,7 +27,7 @@ if (_right)
 if (_espaco)
 {
 	
-	transicao_simples(rm_tela_boss)	
+	transicao_simples(rm_primeira_cela)	
 }
 
 

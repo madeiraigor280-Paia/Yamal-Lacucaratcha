@@ -114,6 +114,16 @@ switch(estado)
 	case "dead":
 		muda_sprite(spr_inimigo_porco_dead);
 		
+		var _chance = random(100)
+		//Criando o power up
+		//Se o chance for maior do que 90
+		//Ele cria o power up
+		if (_chance > 60)
+		{
+			instance_create_layer(x, y, layer, obj_coletavel)
+		}
+		
+		
 		if (image_index >= image_number - 1)
 		{
 			instance_destroy();	
