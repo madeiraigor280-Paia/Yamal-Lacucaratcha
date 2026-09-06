@@ -45,3 +45,10 @@ if (room == rm_indo_espaco2)
 	instance_destroy();
 
 }
+
+if (room == rm_indo_espaco5)
+{
+	instance_create_layer(x, y, layer, obj_boss)
+	instance_destroy();
+	
+}

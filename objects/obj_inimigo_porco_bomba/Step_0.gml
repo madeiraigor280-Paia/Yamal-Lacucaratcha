@@ -11,7 +11,7 @@ if (dano && !tomei_dano)
 switch(estado)
 {
 	case "idle":
-		muda_sprite(spr_porco_bomba_idle);
+		muda_sprite(spr_porco_bomba_idle1);
 		
 		velh = 0
 		
@@ -38,7 +38,7 @@ switch(estado)
 		ver_o_player();
 		
 		
-		muda_sprite(spr_porco_bomba_run);
+		muda_sprite(spr_porco_bomba_run1);
 		//Olhando para o lado certo
 		if (velh != 0)
 		{
@@ -63,7 +63,7 @@ switch(estado)
 	break;
 	
 	case "joga":
-		muda_sprite(spr_porco_bomba_joga);
+		muda_sprite(spr_porco_bomba_joga1);
 		velh = 0;
 		
 		//Se eu terminei a animação, eu vou virar o porco normal
@@ -87,7 +87,7 @@ switch(estado)
 		break;
 	
 	case "pega":
-		muda_sprite(spr_porco_bomba_pega);
+		muda_sprite(spr_porco_bomba_pega1);
 		velh = 0;
 		
 		if (image_index >= image_number - 1)

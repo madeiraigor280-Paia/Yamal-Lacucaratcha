@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_porco_bomba_idle",
-    "path":"sprites/spr_porco_bomba_idle/spr_porco_bomba_idle.yy",
+    "name":"spr_porco_bomba_idle1",
+    "path":"sprites/spr_porco_bomba_idle1/spr_porco_bomba_idle1.yy",
   },
   "spriteMaskId":{
     "name":"spr_inimigo_porco_idle",

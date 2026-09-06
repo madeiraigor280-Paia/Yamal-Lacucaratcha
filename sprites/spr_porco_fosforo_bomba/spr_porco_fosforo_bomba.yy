@@ -28,7 +28,7 @@
   "origin":7,
   "parent":{
     "name":"Porco_fosforo",
-    "path":"folders/Sprites/Inimigos/Porco_fosforo.yy",
+    "path":"folders/argentinosmonkeys/Porco_fosforo.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
