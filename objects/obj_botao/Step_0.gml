@@ -25,11 +25,14 @@ if (_mouse_sobre)
 	tween(id, "image_angle", 0, tween_animation.back, 30)
 	
 	//Checando se a pessoa clicou em mim
-	if (_mouse_click)
+	if (_mouse_click && !global.pergunta_respondida)
 	{
+		
 		//Se ele acertou
-		if (resposta_certa)
+		if (resposta_certa )
 		{
+			
+			global.pergunta_respondida = true;
 			_novo_ang = image_angle + 90;
 			//Aumentando ainda mais as escalas
 			tween(id, "image_xscale", escala_x * 3, tween_animation.back, 10, )
@@ -41,22 +44,23 @@ if (_mouse_sobre)
 			
 			tween(id, "image_angle", _novo_ang, tween_animation.back, 10)
 			screenshake(10)
-			transicao_simples(rm_meu_destino)
+			transicao_simples(rm_meu_destino);
 			
-			//show_message("Você acertou!!")
+			
 		}
-		else
+		else 
 		{
+			global.pergunta_respondida = true;
 			_novo_ang = image_angle - 90;
 			//Aumentando ainda mais as escalas
-			tween(id, "image_xscale", escala_x * 100, tween_animation.back, 3000, )
-			tween(id, "image_yscale", escala_y * 100, tween_animation.back,3080)
-			tween(id, "escala_texto", escala_y * 20, tween_animation.back, 180)
+			tween(id, "image_xscale", escala_x * 7, tween_animation.back, 180, )
+			tween(id, "image_yscale", escala_y * 7, tween_animation.back, 180)
+			tween(id, "escala_texto", escala_y * 7, tween_animation.back, 180)
 			tween(id, "image_angle", _novo_ang, tween_animation.back, 10)
 			
 			screenshake(20)
 			
-			tween(id, "valor_cor", cor_acerto, tween_animation.bounce_in, 20)
+			tween(id, "valor_cor", 1, tween_animation.bounce_in, 20)
 			//Tocando o som variando a altura
 			//Tocando o som se eu errei
 			var _pitch = random_range(0.7, 1.3);
@@ -70,6 +74,7 @@ if (_mouse_sobre)
 			
 			
 			transicao_simples(rm_meu_destino)
+			
 			
 			
 			

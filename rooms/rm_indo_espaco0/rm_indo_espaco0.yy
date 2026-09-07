@@ -54,6 +54,7 @@
     {"name":"inst_33DB460C","path":"rooms/rm_indo_espaco0/rm_indo_espaco0.yy",},
     {"name":"inst_24A7740","path":"rooms/rm_indo_espaco0/rm_indo_espaco0.yy",},
     {"name":"inst_6A32DBD","path":"rooms/rm_indo_espaco0/rm_indo_espaco0.yy",},
+    {"name":"inst_47669DDA","path":"rooms/rm_indo_espaco0/rm_indo_espaco0.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -122,6 +123,7 @@
         {"$GMRInstance":"v4","%Name":"inst_2DC2A383","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DC2A383","objectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.75,"scaleY":11.0,"x":-27.0,"y":352.0,},
         {"$GMRInstance":"v4","%Name":"inst_50CC7301","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_50CC7301","objectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":33.0,"scaleY":1.0,"x":480.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_33DB460C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33DB460C","objectId":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_47669DDA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_47669DDA","objectId":{"name":"obj_relogio","path":"objects/obj_relogio/obj_relogio.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":448.0,"y":-64.0,},
       ],"layers":[],"name":"Colisores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"chao","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"chao","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":25,"SerialiseWidth":64,"TileCompressedData":[
           -554,-2147483648,1,20,-19,17,1,18,-42,-2147483648,13,20,17,32,25,26,32,32,96,97,32,32,25,26,-4,32,5,

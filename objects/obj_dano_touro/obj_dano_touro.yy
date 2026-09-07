@@ -36,5 +36,5 @@
     "path":"sprites/spr_dano_touro/spr_dano_touro.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

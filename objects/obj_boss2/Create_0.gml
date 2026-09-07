@@ -1,3 +1,5 @@
+//Tocando o som de entrada
+audio_play_sound(snd_que_miras_boss, 1, 0);
 
 #region variaveis
 cutscene = true;

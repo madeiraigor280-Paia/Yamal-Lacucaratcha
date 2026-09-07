@@ -6,3 +6,4 @@ if (!instance_exists(obj_game_control))
 }
 
 global.transicao = false
+global.pergunta_respondida = false;

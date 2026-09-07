@@ -206,6 +206,7 @@ switch(estado)
 	
 	case "Dead":
 	{
+		global.matei_boss = true;
 		hspeed = 0;
 		alpha = 0;
 		if (vida_atual < 0)

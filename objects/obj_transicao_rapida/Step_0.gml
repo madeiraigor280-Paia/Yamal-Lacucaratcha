@@ -3,6 +3,8 @@ var _clone = instance_place(x, y, obj_clone_jonas);
 
 if (_player or _clone)
 {
-	transicao_rapida(destino);	
+	transicao_rapida(destino);
+	global.tiro_clone = true;
+	global.player1 = true;
 	
 }

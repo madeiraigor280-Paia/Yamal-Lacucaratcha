@@ -8,17 +8,6 @@ if (move_chekpoint)
 		
 		var _to_start = true;
 		
-		if (instance_exists(obj_checkpoint))
-		{
-			if (obj_checkpoint.flag_ativa == true)
-			{
-				x = obj_checkpoint.x	
-				y = obj_checkpoint.y-5
-				_to_start = false
-				
-			}
-			
-		}
 		
 		if (_to_start)
 		{

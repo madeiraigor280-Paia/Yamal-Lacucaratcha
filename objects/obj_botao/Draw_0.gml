@@ -17,5 +17,5 @@ draw_text_transformed(x, y, texto, escala_texto, escala_texto, image_angle)
 //Restando os draw set
 draw_set_font(-1)
 draw_set_colour(-1)
-draw_set_halign(-1)
-draw_set_valign(-1)
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)

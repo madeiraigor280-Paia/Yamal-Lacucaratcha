@@ -15,6 +15,8 @@ escala_texto = 1;
 
 valor_cor = 0;
 
+apertei = false;
+
 //Criando um método de exemplo
 metodo_exemplo = function()
 {	

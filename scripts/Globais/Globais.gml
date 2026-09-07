@@ -1,7 +1,7 @@
 
 
 //Todas as dificuldades
-global.dificuldade = 3;
+global.dificuldade = 1;
 
 global.hud = true;
 
@@ -9,10 +9,14 @@ global.player1 = true;
 
 global.tiro_clone = true;
 
+global.matei_boss = false;
+
 //Debug de fps
 //show_debug_overlay(true)
 
+global.pergunta_respondida = false;
 
+global.timer = 0;
 
 global.mostra_hud = true
 
@@ -44,6 +48,8 @@ function morre_player()
 		obj_player.estado = "dead";	
 	}
 	global.morreu = false;
+	global.matei_boss = false;
+	global.timer = 0;
 }
 
 function reinicia_jogo()
@@ -53,6 +59,8 @@ function reinicia_jogo()
 	global.player1 = true;
 	
 	global.morreu = false;
+	global.matei_boss = false;
+	global.timer = 0;
 	game_restart()	
 	
 	
