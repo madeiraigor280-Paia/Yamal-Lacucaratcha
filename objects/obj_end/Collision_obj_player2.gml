@@ -1,1 +1,0 @@
-muda_sprite(spr_end_move)

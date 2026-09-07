@@ -26,4 +26,8 @@ if (andando)
 
 	
 }
+
+chance_coletavel = random(100)
+
+criei_coletavel = false;
 tempo_decidir_andar = room_speed * 3;

@@ -11,7 +11,7 @@ shooting = false
 cooldownshooting = 0;
 tired = false;
 
-vida_max = 2 * global.dificuldade;
+vida_max = 450 * global.dificuldade;
 vida_atual = vida_max;
 
 dano = noone

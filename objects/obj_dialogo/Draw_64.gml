@@ -11,7 +11,7 @@ if inicializar == true{
 	var _sprite = texto_grid[# Infos.Retrato, pagina];
 	var _texto = string_copy(texto_grid[# Infos.Texto, pagina], 0, caractere)
 
-	draw_set_font(fnt_dialogo);
+	draw_set_font(fnt_pontos);
 	//Inves de dar um draw_rectangle pode mandar dar draw_sprite se for querer mudar o retangulo
 
 

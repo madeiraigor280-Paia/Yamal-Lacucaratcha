@@ -118,9 +118,13 @@ switch(estado)
 		//Criando o power up
 		//Se o chance for maior do que 90
 		//Ele cria o power up
-		if (_chance > 60)
+		if (!criei_coletavel)
 		{
-			instance_create_layer(x, y, layer, obj_coletavel)
+			if (chance_coletavel > 60)
+			{
+				instance_create_layer(x, y - 10, layer, obj_coletavel)
+				criei_coletavel = true;
+			}
 		}
 		
 		

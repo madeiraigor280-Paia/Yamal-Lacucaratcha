@@ -5,56 +5,52 @@ function scr_textos(){
 		
 		//Aqui pede 4 argumentos, um texto, um retrato, o lado e o nome
 		//Tentar colocar a voz depois
-		ds_grid_add_text("Primeiro texto teste", spr_retrato, 1, "Personagem 2");
+		ds_grid_add_text("Olá, você está no tutorial!", spr_retrato, 1, "Pedri");
 		
-		ds_grid_add_text("Olá, nunca vi você, o que faz aqui ?", spr_retrato, 0, "Personagem 1");
-		ds_grid_add_text("Não sei, me tacaram aqui, um cara misterioso que nunca  vi", spr_retrato_player, 1, "Personagem 2");
-		ds_grid_add_text("Bem, voce teve o mesmo destino de todos, não mudou nada", spr_retrato, 0, "Personagem 1");
-		ds_grid_add_text("Que, como assim 'todos ?'", spr_retrato_player, 1, "Personagem 2");
-			add_op("Quem são essas pessoas ?", "Resposta 1")
-			add_op("Você mora aqui ?", "Resposta 2")
-			add_op("Que lugar é esse ?", "Resposta 3")
+		ds_grid_add_text("Olá, quem seria você ?", spr_yamal_dialogo, 0, "Yamal");
+		ds_grid_add_text("Hahahaha, jogue e descubra", spr_retrato, 1, "Pedri");
+			add_op("O que podemos fazer ?", "Resposta 1")
 			add_op("Sair", "Sair")
 		
 		break;	
 			case "Resposta 1":
-				ds_grid_add_text("Não sei quem são, sempre aparecem aqui, tem um cara que taca musica nos outros destruindo tudo", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Destruindo tudo ? Esse cara que solta musica vai fazer nada", spr_retrato_player, 1, "Personagem 2");
+				ds_grid_add_text("Bem, mate os porcos e tente ganhar a copa por nós", spr_retrato, 0, "Pedri");
+				ds_grid_add_text("Irei dar o melhor melhor!!", spr_yamal_dialogo, 1, "Pedri");
 				
 				//add_op("Primeira Opção so que com mais texto", "Resposta 1")
-				add_op("Você mora aqui ?", "Resposta 2")
-				add_op("Que lugar é esse ?", "Resposta 3")
+				//add_op("Você mora aqui ?", "Resposta 2")
+				//add_op("Que lugar é esse ?", "Resposta 3")
 				add_op("Sair", "Sair")
 				
 			//Podemos adicionar valores para cada resposta
 			//bom += 1
 		
 			break;
-			case "Resposta 2":
-				ds_grid_add_text("Não, fui jogado aqui faz tempo, não lembro nem quem foi o homem que me tacou nesse terror ", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Eu também não lembro, mas voce sabe de alguma pista ?", spr_retrato_player, 1, "Personagem 2");
-				ds_grid_add_text("Não, nunca passei por medo daquele monstro de fone... ", spr_retrato, 0, "Personagem 1");
-				add_op("Quem são essas pessoas ?", "Resposta 1")
-				//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
-				add_op("Que lugar é esse ?", "Resposta 3")
-				add_op("Sair", "Sair")
+			//case "Resposta 2":
+			//	ds_grid_add_text("Não, fui jogado aqui faz tempo, não lembro nem quem foi o homem que me tacou nesse terror ", spr_retrato, 0, "Personagem 1");
+			//	ds_grid_add_text("Eu também não lembro, mas voce sabe de alguma pista ?", spr_retrato_player, 1, "Personagem 2");
+			//	ds_grid_add_text("Não, nunca passei por medo daquele monstro de fone... ", spr_retrato, 0, "Personagem 1");
+			//	add_op("Quem são essas pessoas ?", "Resposta 1")
+			//	//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
+			//	add_op("Que lugar é esse ?", "Resposta 3")
+			//	add_op("Sair", "Sair")
 		
 		
-			break;
+			//break;
 		
-			case "Resposta 3":
-				ds_grid_add_text("Não sabemos, parece ser um purgatorio, tenho medo das coisas que tem mais pra frente", spr_retrato, 0, "Personagem 1");
-				ds_grid_add_text("Bem, tenho que explorar então, vou me vingar de todos", spr_retrato_player, 1, "Personagem 2");
-				add_op("Quem são essas pessoas ?", "Resposta 1")
-				add_op("Você mora aqui ?", "Resposta 2")
-				add_op("Sair", "Sair")
-				//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
+			//case "Resposta 3":
+			//	ds_grid_add_text("Não sabemos, parece ser um purgatorio, tenho medo das coisas que tem mais pra frente", spr_retrato, 0, "Personagem 1");
+			//	ds_grid_add_text("Bem, tenho que explorar então, vou me vingar de todos", spr_retrato_player, 1, "Personagem 2");
+			//	add_op("Quem são essas pessoas ?", "Resposta 1")
+			//	add_op("Você mora aqui ?", "Resposta 2")
+			//	add_op("Sair", "Sair")
+			//	//add_op("Segunda Opção, voce vai pagar", "Resposta 2")
 				
-				//add_op("Terceira Opção, Acho que ele esta cansado", "Resposta 3")
+			//	//add_op("Terceira Opção, Acho que ele esta cansado", "Resposta 3")
 		
 		
 		
-			break;
+			//break;
 			
 			case "Sair":
 				

@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc",
-    "path":"sprites/spr_npc/spr_npc.yy",
+    "name":"spr_npc_pedri",
+    "path":"sprites/spr_npc_pedri/spr_npc_pedri.yy",
   },
   "spriteMaskId":null,
   "visible":true,

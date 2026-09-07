@@ -1,1 +1,0 @@
-estado = "ativada"

@@ -20,3 +20,6 @@ ver_o_player = function()
 	}
 	
 }
+
+criei_coletavel = false;
+chance_coletavel = random(100)
