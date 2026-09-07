@@ -10,6 +10,10 @@ if (_player or _clone)
 
 if (ativei)
 {
+	if (instance_exists(obj_camera))
+	{
+		obj_camera.posso_ativar = true;	
+	}
 	var _boss = instance_create_layer(x + sprite_width / 2, y - 10, layer, obj_boss)
 	_boss.vida_max = 10;
 	_boss.vida_atual = 10;

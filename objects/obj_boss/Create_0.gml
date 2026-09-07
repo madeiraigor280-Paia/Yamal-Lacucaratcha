@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-
+audio_play_sound(snd_boss_touro, 2, 0)
 //Adicionando os atributos do boss
 vida_max = 20 * global.dificuldade;
 vida_max = 6 * global.dificuldade

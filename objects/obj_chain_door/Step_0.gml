@@ -14,6 +14,13 @@ if (fui_ativo)
 		{
 			image_yscale += 0.5;
 			
+			if (!criei_som)
+			{
+				audio_play_sound(snd_corrente, 2, 0);
+				criei_som = true;
+				
+			}
+			
 		}
 	}
 	else //Se eu bati no chão

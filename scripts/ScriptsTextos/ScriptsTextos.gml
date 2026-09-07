@@ -5,7 +5,9 @@ function scr_textos(){
 		
 		//Aqui pede 4 argumentos, um texto, um retrato, o lado e o nome
 		//Tentar colocar a voz depois
-		ds_grid_add_text("Olá, você está no tutorial!", spr_retrato, 1, "Pedri");
+		ds_grid_add_text("Olá, você está no tutorial, se você quer pular a fala do dialogo aperte Z", spr_retrato, 1, "Pedri");
+		ds_grid_add_text("Aperte F para conversar e avançar o dialogo, cuidado, muitos textos podem serem importantes para a história do jogo", spr_retrato, 1, "Pedri");
+		ds_grid_add_text("W e S para mudar de resposta.", spr_retrato, 1, "Pedri");
 		
 		ds_grid_add_text("Olá, quem seria você ?", spr_yamal_dialogo, 0, "Yamal");
 		ds_grid_add_text("Hahahaha, jogue e descubra", spr_retrato, 1, "Pedri");
@@ -14,8 +16,8 @@ function scr_textos(){
 		
 		break;	
 			case "Resposta 1":
-				ds_grid_add_text("Bem, mate os porcos e tente ganhar a copa por nós", spr_retrato, 0, "Pedri");
-				ds_grid_add_text("Irei dar o melhor melhor!!", spr_yamal_dialogo, 1, "Pedri");
+				ds_grid_add_text("Bem, mate os porcos e tente ganhar a copa por nós", spr_retrato, 1, "Pedri");
+				ds_grid_add_text("Irei dar o melhor melhor!!", spr_yamal_dialogo, 0, "Yamal");
 				
 				//add_op("Primeira Opção so que com mais texto", "Resposta 1")
 				//add_op("Você mora aqui ?", "Resposta 2")
@@ -63,6 +65,33 @@ function scr_textos(){
 			
 			break;
 		
+		
+		case "Boss":
+		
+			ds_grid_add_text("Ferrou, acho que estamos perdidos!!! O messi está enfurecido", spr_retrato, 1, "Pedri");
+			ds_grid_add_text("Se você estiver pronto, aperte Y para provocar ele", spr_retrato, 1, "Pedri");
+		
+		ds_grid_add_text("Como eu posso derrotar ele?", spr_yamal_dialogo, 0, "Yamal");
+		ds_grid_add_text("Não temos tempo, atire as bolas nele", spr_retrato, 1, "Pedri");
+			add_op("Se eu derrotar ele eu ganho  ?", "Resposta 2")
+			add_op("Sair", "Sair")
+		
+		break;	
+			
+			
+			case "Resposta 2":
+				ds_grid_add_text("Sim!, se você derrotar ele você consegue voltar para a terra", spr_retrato, 1, "Pedri");
+				ds_grid_add_text("Vou fazer ele e o infantino pagar!!!", spr_yamal_dialogo, 0, "Yamal");
+				
+				//add_op("Primeira Opção so que com mais texto", "Resposta 1")
+				//add_op("Você mora aqui ?", "Resposta 2")
+				//add_op("Que lugar é esse ?", "Resposta 3")
+				add_op("Sair", "Sair")
+			
+			
+			
+		
+		break;
 	}
 
 }

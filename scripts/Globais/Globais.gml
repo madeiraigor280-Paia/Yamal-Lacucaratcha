@@ -3,6 +3,7 @@
 //Todas as dificuldades
 global.dificuldade = 3;
 
+global.hud = true;
 
 global.player1 = true;
 

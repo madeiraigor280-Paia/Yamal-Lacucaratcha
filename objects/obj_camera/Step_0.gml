@@ -23,3 +23,19 @@ if (instance_exists(obj_player))
 }
 
 camera_set_view_border(view_camera[0], 290, 120)
+
+//Efeitos da tela
+if (flash_alpha >= 0.02 && posso_ativar)
+{
+	flash_alpha -= 0.1;
+	
+	
+	
+}
+
+if (flash_alpha <= 0.02)
+{
+	posso_ativar = false;
+	flash_alpha = 1;
+	
+}

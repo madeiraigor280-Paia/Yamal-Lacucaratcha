@@ -12,3 +12,5 @@ if (room == rm_indo_espaco5)
 {
 	fui_ativo = true;	
 }
+
+criei_som = false;

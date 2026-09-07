@@ -226,6 +226,12 @@ if (timer_bola >= global.tempo_bola)
 }
 
 timer_bola++;
+
+if keyboard_check_pressed(ord("H"))
+{
+	global.hud = !global.hud;	
+	
+}
 //show_debug_message(global.dificuldade)
 
 var _dire = point_direction(x, y, mouse_x, mouse_y)

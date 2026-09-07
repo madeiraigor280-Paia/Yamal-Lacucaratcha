@@ -10,12 +10,12 @@
   "name":"obj_npc_1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Dialogo",
-    "path":"folders/Objetos/Dialogo.yy",
+    "name":"Objetos",
+    "path":"folders/Objetos.yy",
   },
   "parentObjectId":{
-    "name":"obj_par_npcs1",
-    "path":"objects/obj_par_npcs1/obj_par_npcs1.yy",
+    "name":"obj_par_npcs",
+    "path":"objects/obj_par_npcs/obj_par_npcs.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_npc_dialogo",
-    "path":"sprites/spr_npc_dialogo/spr_npc_dialogo.yy",
+    "name":"spr_npc_pedri",
+    "path":"sprites/spr_npc_pedri/spr_npc_pedri.yy",
   },
   "spriteMaskId":null,
   "visible":true,
