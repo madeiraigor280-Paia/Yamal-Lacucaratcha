@@ -15,13 +15,12 @@
     {"name":"inst_2C405842","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_2452F32","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_3590BA31","path":"rooms/rm_lua/rm_lua.yy",},
-    {"name":"inst_33973DE8","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_728D357D","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_34BE468A","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_414A589C","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_3D6114B2","path":"rooms/rm_lua/rm_lua.yy",},
-    {"name":"inst_16D43958","path":"rooms/rm_lua/rm_lua.yy",},
     {"name":"inst_7931B3E4","path":"rooms/rm_lua/rm_lua.yy",},
+    {"name":"inst_3617D37C","path":"rooms/rm_lua/rm_lua.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -36,11 +35,10 @@
     {"$GMRInstanceLayer":"","%Name":"Dialogo","depth":300,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Dialogo","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Projeteis","depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Projeteis","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inimigos","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v4","%Name":"inst_33973DE8","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_33973DE8","objectId":{"name":"obj_start_boss","path":"objects/obj_start_boss/obj_start_boss.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":224.0,"y":-96.0,},
         {"$GMRInstance":"v4","%Name":"inst_3D6114B2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3D6114B2","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"properties":[
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_portal","path":"objects/obj_portal/obj_portal.yy",},"propertyId":{"name":"destino","path":"objects/obj_portal/obj_portal.yy",},"resource":{"name":"rm_final","path":"rooms/rm_final/rm_final.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"rm_final",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1122.0,"y":593.0,},
-        {"$GMRInstance":"v4","%Name":"inst_16D43958","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_16D43958","objectId":{"name":"obj_npc_1","path":"objects/obj_npc_1/obj_npc_1.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":704.0,"y":608.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3617D37C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3617D37C","objectId":{"name":"obj_invocador_messi","path":"objects/obj_invocador_messi/obj_invocador_messi.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1024.0,"y":612.0,},
       ],"layers":[],"name":"Inimigos","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Inimigo_etc","depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Inimigo_etc","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"Particulas","depth":700,"effectEnabled":true,"effectType":"_effect_glow","gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"Particulas","properties":[
@@ -62,7 +60,7 @@
             {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_musica","path":"objects/obj_musica/obj_musica.yy",},"propertyId":{"name":"musica_fundo","path":"objects/obj_musica/obj_musica.yy",},"resource":{"name":"snd_musica_boss","path":"sounds/snd_musica_boss/snd_musica_boss.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"snd_musica_boss",},
           ],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":64.0,"y":-64.0,},
         {"$GMRInstance":"v4","%Name":"inst_3590BA31","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3590BA31","objectId":{"name":"obj_chao","path":"objects/obj_chao/obj_chao.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.21875,"x":704.0,"y":640.0,},
-      ],"layers":[],"name":"Colisores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+      ],"layers":[],"name":"Colisores","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":false,},
     {"$GMRTileLayer":"","%Name":"chao","depth":900,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"chao","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":48,"SerialiseWidth":86,"TileCompressedData":[
           -917,-2147483648,-26,0,-54,-2147483648,-33,0,-51,-2147483648,-35,0,-47,-2147483648,-41,0,-45,-2147483648,
           -41,0,-45,-2147483648,-41,0,-45,-2147483648,-41,0,-45,-2147483648,-41,0,-45,-2147483648,-41,0,-45,-2147483648,

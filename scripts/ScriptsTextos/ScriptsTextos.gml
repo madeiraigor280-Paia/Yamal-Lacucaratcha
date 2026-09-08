@@ -92,6 +92,27 @@ function scr_textos(){
 			
 		
 		break;
+		
+		case "invocador":
+		ds_grid_add_text("Se você humano desafiar lendas, você irá sofrer!! Deve ser fan do penaldo ", spr_invocador_dialogo, 1, "Invocador");
+		ds_grid_add_text("Eu quero que você sofra!! Você quer pegar a honra do meu mestre", spr_invocador_dialogo, 1, "Invocador");
+		ds_grid_add_text("Aperte Y para invocar o meu mestre, pequeno inferiorzinho inseto", spr_invocador_dialogo, 1, "Invocador");
+			add_op("Por que seu mestre rouba tanto  ?", "Resposta 3")
+				add_op("Sair", "Sair")
+		
+		
+		
+			
+		break;
+		
+			case "Resposta 3":
+				ds_grid_add_text("Por que seu mestre rouba tanto ? Se ele é supostamente goat", spr_yamal_dialogo, 0, "Yamal");
+		ds_grid_add_text("Mero ser com existência digna de uma formiga", spr_invocador_dialogo, 1, "Invocador");
+		ds_grid_add_text("Você não compreende tamanha calúnia", spr_invocador_dialogo, 1, "Invocador");
+		ds_grid_add_text("Ele foi o melhor, por isso ganhou", spr_invocador_dialogo, 1, "Invocador");
+			
+			
+			break;
 	}
 
 }
