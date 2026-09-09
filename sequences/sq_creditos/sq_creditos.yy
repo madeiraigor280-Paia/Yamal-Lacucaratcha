@@ -129,7 +129,7 @@
       ],"traits":0,},
     {"$GMTextTrack":"","%Name":"fnt_dialogo","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-              "0":{"$AssetTextKeyframe":"v1","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_creditos_final","path":"fonts/fnt_creditos_final/fnt_creditos_final.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"Musica:\r\nVictor Costa\r\nMirim","Wrap":false,},
+              "0":{"$AssetTextKeyframe":"v1","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_creditos_final","path":"fonts/fnt_creditos_final/fnt_creditos_final.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"Musica:\r\nVictor Costa\r\nMirim\r\nMurilo","Wrap":false,},
             },"Disabled":false,"id":"ebdf2ee6-188d-4b41-842b-6456d674f883","IsCreationKey":false,"Key":448.0,"Length":198.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"fnt_dialogo","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282970862,"tracks":[
         {"$GMColourTrack":"","%Name":"blend_multiply","builtinName":10,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<ColourKeyframe>":"","Keyframes":[

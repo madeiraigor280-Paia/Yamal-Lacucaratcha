@@ -41,8 +41,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_idle",
-    "path":"sprites/spr_player_idle/spr_player_idle.yy",
+    "name":"spr_clone_parado",
+    "path":"sprites/spr_clone_parado/spr_clone_parado.yy",
   },
   "spriteMaskId":{
     "name":"spr_player_idle1",

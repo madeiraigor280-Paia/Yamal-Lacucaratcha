@@ -8,7 +8,7 @@ walking = 0;
 cooldownactionboss = 0
 wl = true;
 wr = false
-cooldownwalking = 350;
+cooldownwalking = 250;
 shooting = false
 cooldownshooting = 0;
 tired = false;
@@ -20,7 +20,7 @@ dano = noone
 
 estado = "entrando";
 //Cooldown do boss para descer
-entrando = 600;
+entrando = 615;
 
 tempo_taunt = 250;
 
@@ -121,7 +121,7 @@ leva_dano = function(_sprite)
 	//Checando se estou com a sprite certa
 	if (_tiro_player and _tiro_player.colisaoboss == false)
 	{
-		alarm[0] = 60;
+		alarm[0] = 20;
 		_tiro_player.colisaoboss = true
 		
 		//if (!posso_tomar_dano)

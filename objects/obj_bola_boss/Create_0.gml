@@ -1,5 +1,5 @@
 quicada = 0;
-max_quicada = random_range(2, 3);
+max_quicada = random_range(4, 8);
 colisaoplayer = false;
 colisaoparede = false;
 pode_colidir = false;
@@ -26,7 +26,7 @@ dou_dano = function()
 		{
 			if (_player.estado != "dead")
 			{
-				_player.dano = true	
+				_player.dano = true;
 				
 				
 				_player.timer_dano = _player.tempo_dano;

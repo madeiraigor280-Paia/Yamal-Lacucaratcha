@@ -24,7 +24,7 @@ if (global.player1)
 	velh = 0;
 	
 	
-	sprite_index = spr_player_idle;
+	sprite_index = spr_clone_parado;
 	image_blend = c_gray;
 	exit;	
 	
@@ -73,9 +73,9 @@ switch(estado)
 		tempo_dash--;
 		tempo_cooldown_dash = 0
 		
-		if (sprite_index != spr_player_jump)
+		if (sprite_index != spr_clone_pulando)
 		{
-			sprite_index = spr_player_jump;
+			sprite_index = spr_clone_pulando;
 		}
 		
 		if (!dei_dash)

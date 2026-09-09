@@ -174,8 +174,9 @@ if (!levei_dano)
 		
 		estado = "hit";
 		levei_dano = true;
-		alarm[0] = 120;
+		alarm[0] = 60;
 		vida_atual -= 1;
+		screenshake(5);
 		instance_destroy(_tiro_player)
 	}
 	

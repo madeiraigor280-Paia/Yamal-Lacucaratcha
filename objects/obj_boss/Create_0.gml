@@ -3,12 +3,12 @@ event_inherited();
 
 audio_play_sound(snd_boss_touro, 2, 0)
 //Adicionando os atributos do boss
-vida_max = 20 * global.dificuldade;
-vida_max = 6 * global.dificuldade
+vida_max = 7 * global.dificuldade;
+vida_max = 7 * global.dificuldade
 vida_atual = vida_max;
 
-max_velh = 3;
-max_velv = 3;
+max_velh = 5;
+max_velv = 5;
 
 timer_estado = 0;
 ataque = 1 * global.dificuldade;

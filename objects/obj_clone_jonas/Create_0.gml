@@ -129,14 +129,14 @@ estado_normal = function()
 		if (velh != 0)
 		{
 			//Mudo a sprite
-			sprite_index = spr_player_run;
+			sprite_index = spr_clone_correndo;
 			//Faço ele olhar para onde eu estou indo
 			image_xscale = sign(velh);
 			
 		}
 		else
 		{
-			sprite_index = spr_player_idle;
+			sprite_index = spr_clone_parado;
 			
 				
 			
@@ -164,12 +164,12 @@ estado_normal = function()
 		//Mudando a sprite
 		if (velv < 0)
 		{
-			sprite_index = spr_player_jump;
+			sprite_index = spr_clone_pulando;
 			
 		}
 		else
 		{
-			sprite_index = spr_player_fall;
+			sprite_index = spr_clone_caindo;
 			
 			//Se eu estou indo para baixo, ai eu posso cair na cabeça do inimigo
 			var _inimigo	= instance_place(x, y + 6, obj_inimigo_pai)

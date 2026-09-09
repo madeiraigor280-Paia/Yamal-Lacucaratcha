@@ -18,15 +18,17 @@ global.pergunta_respondida = false;
 
 global.timer = 0;
 
+randomise();
+
 global.mostra_hud = true
 
 global.timer = 0
 
 global.modo = true;
 
-global.bola = 1;
+global.bola = 5;
 global.max_bola = 5;
-global.tempo_bola = 10;
+global.tempo_bola = 120;
 
 function brilho_efect(xscl,yscl,cor,alp)
 {

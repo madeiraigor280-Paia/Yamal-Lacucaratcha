@@ -183,7 +183,7 @@ switch(estado)
 		entrei_no_ataque = false;
 		//Não andei
 		ja_andei = false;
-		cooldownwalking = 350;
+		cooldownwalking = 250;
 		posso = true;
 		criei_naves = false;
 		//if (x >= room_width/2)
