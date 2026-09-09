@@ -15,8 +15,8 @@ if (ativei)
 		obj_camera.posso_ativar = true;	
 	}
 	var _boss = instance_create_layer(x + sprite_width / 2, y - 10, layer, obj_boss)
-	_boss.vida_max = 10;
-	_boss.vida_atual = 10;
+	_boss.vida_max = 5 * global.dificuldade;
+	_boss.vida_atual = 5 * global.dificuldade;
 	_boss.fui_criado_sensor = true;
 	
 	if instance_exists(obj_chain_door)

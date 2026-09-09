@@ -12,6 +12,6 @@ if (alpha > 0){
 	gpu_set_fog(false, color, 0,  0);
 }
 
-draw_text(x, y - 20, estado)
-draw_text(x + 20, y, vida_atual)
+//draw_text(x, y - 20, estado)
+//draw_text(x + 20, y, vida_atual)
 
