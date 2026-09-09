@@ -39,3 +39,10 @@ if (flash_alpha <= 0.02)
 	flash_alpha = 1;
 	
 }
+
+//Debug para se o jogador bugar
+if (keyboard_check_released(vk_f5))
+{
+	
+	room_restart();	
+}

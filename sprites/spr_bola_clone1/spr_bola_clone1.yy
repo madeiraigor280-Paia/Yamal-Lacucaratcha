@@ -23,7 +23,7 @@
   ],
   "name":"spr_bola_clone1",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Faca",
     "path":"folders/Sprites/Faca.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":5,
-    "yorigin":5,
+    "yorigin":10,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
