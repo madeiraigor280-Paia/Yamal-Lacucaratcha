@@ -2,7 +2,7 @@
 if (other.colisaoporco) exit;
 	
 quicada++;
-var s = audio_play_sound(snd_pulo, 0, false);
+var s = audio_play_sound(snd_bola_quicando, 0, false);
 		audio_sound_pitch(s, random_range(0.95, 1.05));
 
 other.colisaoporco = true;

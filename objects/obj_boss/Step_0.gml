@@ -20,7 +20,7 @@ switch(estado)
 {
 	case "parado":
 	{
-		
+		toquei_musica = false;
 		//Criar a lógica do estado parado
 		//Ajustando a sprite dele
 		if (sprite_index != spr_boss_idle)
@@ -115,6 +115,11 @@ switch(estado)
 		case "hit":
 		{
 			leva_dano(spr_boss_hurt, 2);
+			if (!toquei_musica)
+			{
+				audio_play_sound(snd_hit, 2, 0);
+				toquei_musica = true;
+			}
 			
 			break;
 		}

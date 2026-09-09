@@ -18,6 +18,8 @@ massa = 3;
 taunt_delay = room_speed * 2
 taunt_timer = taunt_delay;
 
+toquei_musica = false;
+
 dano = noone;
 
 //Substate

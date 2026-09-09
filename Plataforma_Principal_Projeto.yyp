@@ -331,6 +331,7 @@
     {"id":{"name":"sq_yamal_titulo","path":"sequences/sq_yamal_titulo/sq_yamal_titulo.yy",},},
     {"id":{"name":"sh_cor","path":"shaders/sh_cor/sh_cor.yy",},},
     {"id":{"name":"snd_bau","path":"sounds/snd_bau/snd_bau.yy",},},
+    {"id":{"name":"snd_bola_quicando","path":"sounds/snd_bola_quicando/snd_bola_quicando.yy",},},
     {"id":{"name":"snd_boss_touro","path":"sounds/snd_boss_touro/snd_boss_touro.yy",},},
     {"id":{"name":"snd_clone","path":"sounds/snd_clone/snd_clone.yy",},},
     {"id":{"name":"snd_corrente","path":"sounds/snd_corrente/snd_corrente.yy",},},
