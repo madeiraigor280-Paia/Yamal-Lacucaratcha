@@ -36,5 +36,5 @@
     "path":"sprites/spr_chao1/spr_chao1.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

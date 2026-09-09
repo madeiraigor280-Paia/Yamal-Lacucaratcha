@@ -1,4 +1,5 @@
 //Fazendo ele ter gravidade a todo momento
+
 var _no_chao = place_meeting(x, y + 1, obj_chao)
 if (global.transicao != false) exit;
 

@@ -49,8 +49,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bola",
-    "path":"sprites/spr_bola/spr_bola.yy",
+    "name":"spr_bola1",
+    "path":"sprites/spr_bola1/spr_bola1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_bola_clone",
-    "path":"sprites/spr_bola_clone/spr_bola_clone.yy",
+    "name":"spr_bola_clone1",
+    "path":"sprites/spr_bola_clone1/spr_bola_clone1.yy",
   },
   "spriteMaskId":null,
   "visible":true,

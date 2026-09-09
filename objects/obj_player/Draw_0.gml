@@ -12,7 +12,14 @@ if estado == "dead" exit;
 		
 			if (global.player1)
 			{
-				draw_sprite_ext(spr_bola, 0, x + xx, y - 8 + yy, 1, 1, dir, c_white, 1)
+				if (global.modo)
+				{
+					draw_sprite_ext(spr_bola1, 0, x + xx, y - 8 + yy, 1, 1, dir, c_white, 1)
+				}
+				else
+				{
+					draw_sprite_ext(spr_bola_clone1, 0, x + xx, y - 8 + yy, 1, 1, dir, c_white, 1)
+				}
 	
 		
 					var _mouse_x = mouse_x;

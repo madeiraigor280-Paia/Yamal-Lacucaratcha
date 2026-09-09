@@ -34,8 +34,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_botao_puzzle_pressionado",
-    "path":"sprites/spr_botao_puzzle_pressionado/spr_botao_puzzle_pressionado.yy",
+    "name":"spr_botao_puzzle_pressionado1",
+    "path":"sprites/spr_botao_puzzle_pressionado1/spr_botao_puzzle_pressionado1.yy",
   },
   "spriteMaskId":null,
   "visible":true,
