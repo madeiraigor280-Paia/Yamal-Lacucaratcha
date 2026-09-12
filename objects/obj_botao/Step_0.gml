@@ -46,7 +46,10 @@ if (_mouse_sobre)
 			screenshake(10)
 			transicao_simples(rm_meu_destino);
 			
+				var _pitch = random_range(0.7, 1.3);
 			
+			
+			audio_play_sound(snd_acerto, 0, 0, , , _pitch)
 		}
 		else 
 		{
